@@ -1,4 +1,5 @@
 <?php
 echo ("<h3> mam na imie Szymon </h3>");
-echo ("mam 18 lat");
+<br>
+echo ("<h3> mam 18 lat </h3>");
 ?>
