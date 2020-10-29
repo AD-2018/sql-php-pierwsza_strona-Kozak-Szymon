@@ -1,3 +1,3 @@
 <?php
-echo ("<h3> mam na imie Szymon </h3>")
+echo ("<h3> mam na imie Szymon </h3>");
 ?>
