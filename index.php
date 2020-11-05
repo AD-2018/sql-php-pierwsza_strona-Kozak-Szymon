@@ -5,7 +5,7 @@
 </head>
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
-    <h1>Imie  nazwosko</h1>
+    <h1>Szymon Kozak</h1>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -13,9 +13,8 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-echo("Zad 1");
+    echo("<h3> ZAD 1 </h3>");
 $sql = "SELECT * FROM pracownicy";
-   
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
