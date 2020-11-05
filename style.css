@@ -5,3 +5,7 @@ body {
 table {
   border-collapse: collapse;
 }
+
+th {
+  height: 70px;
+}
