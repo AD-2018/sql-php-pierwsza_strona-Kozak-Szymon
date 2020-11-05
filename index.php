@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -18,3 +24,5 @@ $result = mysqli_query($conn, $sql);
         }
     echo ('</table>');
 ?>
+    </body>
+</html>
