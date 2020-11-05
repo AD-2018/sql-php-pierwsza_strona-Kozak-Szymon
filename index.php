@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Imie  nazwosko</h1>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
