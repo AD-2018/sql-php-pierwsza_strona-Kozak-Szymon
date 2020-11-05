@@ -38,7 +38,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
         echo("<h3> ZAD 2 </h3>");
-$sql = "SELECT dzial,avg(zarobki) as srednia FROM pracownicy where avg(zarobki)<40 group by dzial having avg(zarobki)<40";
+$sql = "SELECT dzial,avg(zarobki) as srednia FROM pracownicy where avg(zarobki)<40 group by dzial";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
