@@ -50,11 +50,11 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
         echo("<h3> ZAD 3 </h3>");
-$sql = "SELECT dzial,avg(zarobki) FROM pracownicy where avg(zarobki)<40 group by dzial having avg(zarobki)<40 ";
+$sql = "SELECT dzial, avg(zarobki) FROM pracownicy where(avg(zarobki)<40) group by dzial;
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>");
+    echo ("<tr><th>zarobki</th><th>dzial</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["zarobki"].'</td><td>'.$row["dzial"].'</td>');
