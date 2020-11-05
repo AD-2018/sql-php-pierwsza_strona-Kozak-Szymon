@@ -42,7 +42,7 @@ $sql = "SELECT imie, zarobki FROM pracownicy where id_org=dzial group by dzial h
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>srednia</th><th>dzial</th></tr>");
+    echo ("<tr><th>avg(zarobki)</th><th>nazwa_dzial</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["srednia"].'</td><td>'.$row["nazwa_dzial"].'</td>');
