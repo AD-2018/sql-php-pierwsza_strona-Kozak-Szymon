@@ -88,14 +88,14 @@ $result = mysqli_query($conn, $sql);
     
     
      echo("<h3> ZAD 5 </h3>");
-$sql = "SELECT * FROM pracownicy,organizacja WHERE dzial = nazwa_dzial and dzial=1 and dzial=4";
+$sql = "SELECT imie, nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (dzial=1 or dzial=4) ";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>nazwa_dzial</th></tr>");
+    echo ("<tr><th>imie</th><th>nazwa_dzial</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('<td>'.$row["imie"].'</td><td>'.$row["nazwa_dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
 ?>
