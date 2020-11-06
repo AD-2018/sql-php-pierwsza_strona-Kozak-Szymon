@@ -88,7 +88,7 @@ $result = mysqli_query($conn, $sql);
     
     
      echo("<h3> ZAD 5 </h3>");
-$sql = "SELECT imie, nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (dzial = 1 and and dzial =4)";
+$sql = "SELECT imie, nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (dzial = 1 and dzial =4)";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
