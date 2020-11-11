@@ -110,14 +110,14 @@ $result = mysqli_query($conn, $sql);
     
     
     echo("<h3> zad 7 </h3>");
-$sql = "SELECT avg(zarobki) FROM pracownicy WHERE imie NOT LIKE '%a' and (dzial=1 OR dzial=2)";
+$sql = "SELECT count(imie) FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>srednia_zarobkow_mezczyzn_dział(1 i 2)</th></tr>");
+    echo ("<tr><th>ilosc_pracownikow(1 i 2)</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["avg(zarobki)"].'</td>');
+                echo ('<td>'.$row["count(imie)"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
     
