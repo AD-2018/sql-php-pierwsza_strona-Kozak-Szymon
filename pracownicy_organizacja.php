@@ -58,7 +58,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> ZAD 4 </h3>");
-$sql = "SELECT  * FROM pracownicy,organizacja WHERE dzial = nazwa_dzial and dzial=1 and dzial=4 and imie like '%a'";
+$sql = "SELECT  * FROM pracownicy,organizacja WHERE dzial = id_org and (dzial=1 or dzial=4) and imie like '%a'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
