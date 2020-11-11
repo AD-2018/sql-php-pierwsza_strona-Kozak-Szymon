@@ -46,14 +46,14 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
  
     echo("<h3> zad 2 </h3>");
-$sql = "SELECT imie, sum(zarobki) FROM pracownicy where imie like'%a'";
+$sql = "SELECT sum(zarobki) FROM pracownicy where imie like'%a'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>suma_zarobkow</th></tr>");
+    echo ("<tr><th>suma_zarobkow_kobiet</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["sum(zarobki)"].'</td><td>'.$row["imie"].'</td>');
+                echo ('<td>'.$row["sum(zarobki)"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
     
