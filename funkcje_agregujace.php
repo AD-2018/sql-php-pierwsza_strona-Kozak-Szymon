@@ -114,7 +114,20 @@ $sql = "SELECT count(imie) FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ilosc_pracownikow(1 i 2)</th></tr>");
+    echo ("<tr><th>ilosc_pracownikow</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["count(imie)"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    
+    echo("<h3> zad 8 </h3>");
+$sql = "SELECT count(imie) FROM pracownicy where imie like'%a'";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ilosc_pracownikow(kobiety)</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["count(imie)"].'</td>');
