@@ -34,7 +34,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
       echo("<h3> zad 1 </h3>");
-$sql = "SELECT SUM(zarobki) FROM pracownicy";
+$sql = "SELECT sum(zarobki) FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
