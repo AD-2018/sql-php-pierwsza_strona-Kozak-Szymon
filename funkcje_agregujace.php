@@ -81,6 +81,19 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["avg(zarobki)"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+   
+    
+      echo("<h3> zad 5 </h3>");
+$sql = "SELECT AVG(zarobki) FROM pracownicy WHERE dzial=4";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>srednia_zarobkow_dział(4)(działy 2 i 3)</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["avg(zarobki)"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
     
     ?>
 </body>
