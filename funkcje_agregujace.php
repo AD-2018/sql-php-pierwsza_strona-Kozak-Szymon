@@ -57,6 +57,18 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo("<h3> zad 3 </h3>");
+$sql = "SELECT SUM(zarobki) FROM pracownicy WHERE imie NOT LIKE '%a' and (dzial=3 OR dzial=2)";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>suma_zarobkow_mężczyzn(działy 2 i 3)</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["sum(zarobki)"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
     ?>
 </body>
 </html>
