@@ -68,6 +68,19 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["sum(zarobki)"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+   
+    
+    echo("<h3> zad 4 </h3>");
+$sql = "SELECT avg(zarobki) FROM pracownicy WHERE imie LIKE '%a'";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>srednia_zarobkow_mężczyzn(działy 2 i 3)</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["avg(zarobki)"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
     
     ?>
 </body>
