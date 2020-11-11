@@ -84,7 +84,7 @@ $result = mysqli_query($conn, $sql);
    
     
       echo("<h3> zad 5 </h3>");
-$sql = "SELECT AVG(zarobki) FROM pracownicy WHERE dzial=4";
+$sql = "SELECT avg(zarobki) FROM pracownicy WHERE dzial=4";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
