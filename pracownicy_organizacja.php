@@ -73,7 +73,7 @@ $result = mysqli_query($conn, $sql);
     
     
             echo("<h3> ZAD 7 </h3>");
-$sql = "SELECT imie, nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and imie not like '%a'";
+$sql = "SELECT imie, nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and imie not like '%a'"
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -83,6 +83,19 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["imie"].'</td><td>'.$row["nazwa_dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-?>
+
+      echo("<h3> Zad 8 </h3>");
+ $sql ="select * from pracownicy,organizacja where id_org=dzial order by imie desc"; 
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>Imie</th><th>Nazwa Dzialu</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>"); 
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    ?>
 </body>
 </html>
