@@ -36,7 +36,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> ZAD 1</h3>");
-$sql = "select *,DATEDIFF(CURDATE(),data_urodzenia) AS wiek from pracownicy,organizacja where id_org=dzial";
+$sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy;";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
