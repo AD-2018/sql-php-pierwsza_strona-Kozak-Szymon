@@ -72,7 +72,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> ZAD 4 </h3>");
-$sql = "SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as Suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'";
+$sql = "SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma from pracownicy,organizacja WHERE id_org=dzial and nazwa_dzial='handel'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -80,6 +80,30 @@ $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["suma"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    echo("<h3> ZAD 5 </h3>");
+$sql = "SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma_lat_kobiet from pracownicy WHERE imie LIKE '%a'";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>Suma_lat_kobiet</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["suma_lat_kobiet"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    echo("<h3> ZAD 6 </h3>");
+$sql = "SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma_lat_mezczyzn from pracownicy WHERE imie not LIKE '%a'";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>Suma_lat_mezczyzn</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["suma_lat_mezczyzn"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
     
