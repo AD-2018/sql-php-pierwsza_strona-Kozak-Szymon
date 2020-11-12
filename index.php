@@ -13,6 +13,8 @@
         <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
+        <br>
+        <a href="data_czas.php">Data i Czas</a>
     </div>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
