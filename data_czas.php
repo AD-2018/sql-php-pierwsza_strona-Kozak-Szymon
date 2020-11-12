@@ -48,18 +48,6 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
        echo("<h3> ZAD 2</h3>");
-$sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE nazwa_dzial='serwis'";
-    echo ("<li>".$sql."</li><br><br>");
-$result = mysqli_query($conn, $sql);
-    echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>imie</th><th>wiek</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo ('<tr>');
-                echo ('<td>'.$row["imie"].'</td><td>'.$row["wiek"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
-    
-    echo("<h3> ZAD 2</h3>");
 $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE id_org=dzial and nazwa_dzial='serwis'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -70,6 +58,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["imie"].'</td><td>'.$row["wiek"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+    
+    
     
         ?>
         </body>
