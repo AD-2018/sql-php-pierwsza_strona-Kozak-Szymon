@@ -171,7 +171,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> zad 12 </h3>");
-$sql = "SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28";
+$sql = "SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28 ";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
