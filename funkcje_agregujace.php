@@ -170,6 +170,42 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo("<h3> zad 12 </h3>");
+$sql = "SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>suma_zarobkow</th><th>nazwa _dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["sum(zarobki)"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    echo("<h3> zad 12 </h3>");
+$sql = "SELECT avg(zarobki),nazwa_dzial from pracownicy, organizacja WHERE imie not like '%a'GROUP BY dzial HAVING avg(zarobki) > 28";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>srednia_zarobkow_mezczyzn</th><th>nazwa _dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["avg(zarobki)"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    echo("<h3> zad 13 </h3>");
+$sql = "SELECT count(id_pracownicy),nazwa_dzial from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 3";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ilosc_pracownikow</th><th>nazwa _dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["count(id_pracownicy)"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
     
     ?>
 </body>
