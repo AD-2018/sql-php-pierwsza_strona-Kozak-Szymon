@@ -143,6 +143,18 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo("<h3> ZAD 10 </h3>");
+$sql = "SELECT imie, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja WHERE id_org=dzial and (nazwa_dzial='handel' or nazwa_dzial='serwis') GROUP BY dzial";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>imie</th><th>wiek</th><th>nazwa_dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["imie"].'</td><td>'.$row["wiek"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
         ?>
         </body>
         </html>
