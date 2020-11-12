@@ -155,6 +155,18 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    
+    echo("<h3> ZAD 11 </h3>");
+$sql = "SELECT imie,DATEDIFF(CURDATE(),data_urodzenia) AS dni_zycia FROM pracownicy";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>imie</th><th>dni_zycia</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["imie"].'</td><td>'.$row["dni_zycia"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
         ?>
         </body>
         </html>
