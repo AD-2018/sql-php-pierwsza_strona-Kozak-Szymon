@@ -14,7 +14,7 @@
         <br>
         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
         <br>
-        <a href="data_czas.php">Datak i Czas</a>
+        <a href="data_czas.php">Data i Czas</a>
     </div>
 <?php
   $servername = "mysql-szymonkozak.alwaysdata.net";
