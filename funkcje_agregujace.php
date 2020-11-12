@@ -33,6 +33,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo ("<h3> FUNKCJE AGREGUJACE </h3>");
+    
       echo("<h3> zad 1 </h3>");
 $sql = "SELECT sum(zarobki) FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
@@ -134,6 +136,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo ("<h3>GROUP BY</h3>");
+    
     echo("<h3> zad 9 </h3>");
 $sql = "SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja WHERE dzial = id_org GROUP BY dzial";
     echo ("<li>".$sql."</li><br><br>");
@@ -169,6 +173,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["avg(zarobki)"].'</td><td>'.$row["nazwa_dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+    
+    echo ("<h3>HAVING</h3>");
     
     echo("<h3> zad 12 </h3>");
 $sql = "SELECT sum(zarobki),nazwa_dzial from pracownicy, organizacja GROUP BY dzial HAVING sum(zarobki) < 28 ";
