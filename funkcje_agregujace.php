@@ -146,6 +146,31 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo("<h3> zad 10 </h3>");
+$sql = "SELECT count(id_pracownicy),nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org GROUP BY dzial ";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>id_pracownicy</th><th>nazwa _dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["count(id_pracownicy)"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    echo("<h3> zad 11 </h3>");
+$sql = "SELECT avg(zarobki),nazwa_dzial FROM pracownicy,organizacja GROUP BY dzial";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>srednia_zarobkow</th><th>nazwa _dzial</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["avg(zarobki)"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    
     ?>
 </body>
 </html>
