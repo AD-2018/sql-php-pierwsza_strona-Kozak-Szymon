@@ -275,6 +275,19 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["dzien"].'</td><td>'.$row["imie"].'</td><td>'.$row["data_urodzenia"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-        ?>
+       
+    echo("<h3> ZAD 9 </h3>");
+    $sql ="SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as urodzenia_pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Monday'";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>urodzenia_pon</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["urodzenia_pon"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    ?>
         </body>
         </html>
