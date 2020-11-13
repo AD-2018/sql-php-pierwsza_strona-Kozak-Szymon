@@ -202,7 +202,7 @@ $result = mysqli_query($conn, $sql);
     $result = mysqli_query($conn, $sql2);
     echo ('<table border = "1" class = "moja_tabelka">');
     echo ("<tr><th>data</th></tr>");
-        while ($row = mysqli_fetch_assoc($result2)) {
+        while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["data"].'</td>');
                 echo ('</tr>');
