@@ -195,8 +195,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> ZAD 2 </h3>");
-    $sql= "SET lc_time_names = 'pl_PL'";
-    $sql = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
+    $sql = "SET lc_time_names = 'pl_PL', SELECT DATE_FORMAT(CURDATE(), '%W')as data";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
