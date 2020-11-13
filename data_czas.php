@@ -277,7 +277,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
        
     echo("<h3> ZAD 9 </h3>");
-    $sql ="SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as urodzenia_pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='monday'";
+    $sql ="SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as urodzenia_pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
