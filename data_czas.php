@@ -296,7 +296,7 @@ $result = mysqli_query($conn, $sql);
           WHEN dzien= 'Czwartek' THEN 4
           WHEN dzien = 'Piątek' THEN 5
           WHEN dzien = 'Sobota' THEN 6
-          WHEN dzien = 'Niedziela' THEN 7
+          WHEN dzien = 'niedziela' THEN 7
      END ASC";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
