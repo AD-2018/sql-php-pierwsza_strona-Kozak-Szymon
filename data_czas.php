@@ -258,13 +258,13 @@ $result = mysqli_query($conn, $sql);
     
    echo("<h3> ZAD 8 </h3>");
 $sql = "SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE
-          WHEN dzien = 'Monday' THEN 1
-          WHEN dzien = 'Tuesday' THEN 2
-          WHEN dzien = 'Wednesday' THEN 3
-          WHEN dzien= 'Thursday' THEN 4
-          WHEN dzien = 'Friday' THEN 5
-          WHEN dzien = 'Saturday' THEN 6
-          WHEN dzien = 'Sunday' THEN 7
+          WHEN dzien = 'Poniedziałek' THEN 1
+          WHEN dzien = 'Wtorek' THEN 2
+          WHEN dzien = 'Środa' THEN 3
+          WHEN dzien= 'Czwartek' THEN 4
+          WHEN dzien = 'Piątek' THEN 5
+          WHEN dzien = 'Sobota' THEN 6
+          WHEN dzien = 'niedziela' THEN 7
        END ASC";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
