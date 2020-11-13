@@ -195,13 +195,14 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
     
     echo("<h3> ZAD 2 </h3>");
-    $sql = "SET lc_time_names = 'pl_PL'";
-    $sql ="SELECT DATE_FORMAT(CURDATE(), '%W')as data";
+    $sql1 = "SET lc_time_names = 'pl_PL'";
+    $sql2 ="SELECT DATE_FORMAT(CURDATE(), '%W')as data";
     echo ("<li>".$sql."</li><br><br>");
-$result = mysqli_query($conn, $sql);
+    $result = mysqli_query($conn, $sql1);
+    $result = mysqli_query($conn, $sql2);
     echo ('<table border = "1" class = "moja_tabelka">');
     echo ("<tr><th>data</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
+        while ($row = mysqli_fetch_assoc($result2)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["data"].'</td>');
                 echo ('</tr>');
