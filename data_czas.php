@@ -288,6 +288,27 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+      echo("<h3> ZAD 10 </h3>");
+$sql = "SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, count(date_format(data_urodzenia, '%W')) as liczba FROM pracownicy GROUP BY dzien ORDER BY CASE
+
+          WHEN dzien = 'Poniedziałek' THEN 1
+          WHEN dzien = 'Wtorek' THEN 2
+          WHEN dzien = 'Środa' THEN 3
+          WHEN dzien = 'Czwartek' THEN 4
+          WHEN dzien = 'Piątek' THEN 5
+          WHEN dzien = 'Sobota' THEN 6
+          WHEN dzien = 'Niedziela' THEN 7
+          END ASC";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>dzien</th><th>liczba</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["dzien"].'</td><td>'.$row["liczba"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
     ?>
         </body>
         </html>
