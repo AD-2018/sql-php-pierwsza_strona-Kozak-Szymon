@@ -183,7 +183,7 @@ $result = mysqli_query($conn, $sql);
     echo ("<h3>FORMATOWANIE DAT </h3>");
     
      echo("<h3> ZAD 1 </h3>");
-$sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy;";
+    $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as wiek from pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -191,6 +191,19 @@ $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["imie"].'</td><td>'.$row["wiek"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    echo("<h3> ZAD 2 </h3>");
+    $sql= "SET lc_time_names = 'pl_PL'";
+    $sql = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>data</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["data"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
     
