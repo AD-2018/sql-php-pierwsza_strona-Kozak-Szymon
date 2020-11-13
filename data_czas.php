@@ -255,6 +255,18 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+    echo("<h3> ZAD 7 </h3>");
+    $sql ="SELECT DATE_FORMAT("2002-10-01", "%j") as dzien_urodzenia";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>dzien_urodzenia</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["dzien_urodzenia"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
         ?>
         </body>
         </html>
