@@ -265,7 +265,7 @@ $sql = "SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia F
           WHEN dzien = 'Friday' THEN 5
           WHEN dzien = 'Saturday' THEN 6
           WHEN dzien = 'Sunday' THEN 7
-     END ASC";
+     group by dzien ASC";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
