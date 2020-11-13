@@ -256,6 +256,25 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
     
+   echo("<h3> ZAD 8 </h3>");
+$sql = "SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE
+          WHEN dzien = 'Monday' THEN 1
+          WHEN dzien = 'Tuesday' THEN 2
+          WHEN dzien = 'Wednesday' THEN 3
+          WHEN dzien= 'Thursday' THEN 4
+          WHEN dzien = 'Friday' THEN 5
+          WHEN dzien = 'Saturday' THEN 6
+          WHEN dzien = 'Sunday' THEN 7
+     END ASC";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>dzien</th><th>imie</th><th>data_urodzenia</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["dzien"].'</td><td>'.$row["imie"].'</td><td>'.$row["data_urodzenia"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
         ?>
         </body>
         </html>
