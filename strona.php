@@ -23,12 +23,16 @@
 	echo("jesteś na stronie.php");
 	
 	echo("<ul>");
-	
-	echo("Firstname".$_POST["firstname"]);
-	echo("Lastname".$_POST["lastname"]);
-	echo("City".$_POST["city"]);
-	echo("Phone".$_POST["phone"]);
-	echo("Postcode".$_POST["postcode"]);
+	<label>Firstaname</label>
+	echo("<br>".$_POST["firstname"]);
+	<label>Firstaname</label>
+	echo("<br>".$_POST["lastname"]);
+	<label>Firstaname</label>
+	echo("<br>".$_POST["city"]);
+	<label>Firstaname</label>
+	echo("<br>".$_POST["phone"]);
+	<label>Firstaname</label>
+	echo("<br>".$_POST["postcode"]);
 		
 	echo("<ul>");
 ?>
