@@ -15,6 +15,10 @@
         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
         <br>
         <a href="data_czas.php">Data i Czas</a>
+        <br> 
+        <a href="Formularz.html">Formularze</a>
+        <br>
+        <a href="strona.php">Strona Formularza</a>
     </div>
 <?php
   $servername = "mysql-szymonkozak.alwaysdata.net";
