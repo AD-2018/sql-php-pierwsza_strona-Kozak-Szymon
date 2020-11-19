@@ -24,11 +24,11 @@
 	
 	echo("<ul>");
 	
-	echo("<li>".$_POST["firstname"]);
-	echo("<li>".$_POST["lastname"]);
-	echo("<li>".$_POST["city"]);
-	echo("<li>".$_POST["phone"]);
-	echo("<li>".$_POST["postcode"]);
+	echo("Firstname".$_POST["firstname"]);
+	echo("Lastname".$_POST["lastname"]);
+	echo("City".$_POST["city"]);
+	echo("Phone".$_POST["phone"]);
+	echo("Postcode".$_POST["postcode"]);
 		
 	echo("<ul>");
 ?>
