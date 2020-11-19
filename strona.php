@@ -23,14 +23,10 @@
 	echo("jesteś na stronie.php");
 	
 	echo("<ul>");
-	echo("Firstname:".$_POST["firstname"]);
-	echo("<br>";
-	echo("Lastname:".$_POST["lastname"]);
-	echo("<br>";
-	echo("City:".$_POST["city"]);
-	echo("<br>";
-	echo("Phone:".$_POST["phone"]);
-	echo("<br>";
-	echo("Postcode".$_POST["postcode"]);	
+	echo("<li>".$_POST["firstname"]);
+	echo("<li>".$_POST["lastname"]);
+	echo("<li>".$_POST["city"]);
+	echo("<li>".$_POST["phone"]);
+	echo("<li>".$_POST["postcode"]);	
 	echo("<ul>");
 ?>
