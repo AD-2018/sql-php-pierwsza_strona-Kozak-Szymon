@@ -21,7 +21,8 @@
         <a href="delete.php">Usuwanie z bazy</a>
     </div>
 <?php
-  $servername = "mysql-szymonkozak.alwaysdata.net";
+    echo("<h3> DATA I CZAS </h3>");
+$servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
 $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
