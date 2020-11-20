@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) 
-       VALUES (null, Ksawery, 1, 76,'1991-11-21')";
+       VALUES (null, 'Ksawery', 1, 76,'1991-11-21')";
 
 $conn->query($sql);
 
