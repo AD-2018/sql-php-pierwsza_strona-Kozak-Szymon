@@ -25,3 +25,5 @@
 <?php
 echo ("<h3>jesteś w delete.php<h3>";
 ?>
+</body>
+</html>
