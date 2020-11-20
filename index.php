@@ -8,8 +8,6 @@
     <h1>Szymon Kozak</h1>
     
     <div class = "nav">
-        <a href="index.php">strona główna</a>
-        <br>
         <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
         <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
@@ -20,7 +18,7 @@
         <br>
         <a href="dane_do_bazy.html">Dane do bazy</a>
         <br>
-        <a href="delete.php">Delete</a>
+        <a href="delete.php">Usuwanie z bazy</a>
     </div>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
