@@ -19,6 +19,8 @@
         <a href="Formularz.html">Formularze</a>
         <br>
         <a href="strona.php">Strona Formularza</a>
+        <br>
+        <a href="delete.php">Delete</a>
     </div>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
