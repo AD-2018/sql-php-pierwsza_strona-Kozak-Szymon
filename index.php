@@ -20,6 +20,8 @@
         <br>
         <a href="strona.php">Strona Formularza</a>
         <br>
+        <a href="dane_do_bazy.php">Dane do bazy</a>
+        <br>
         <a href="delete.php">Delete</a>
     </div>
 <?php
