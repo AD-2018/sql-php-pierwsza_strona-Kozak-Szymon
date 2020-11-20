@@ -12,20 +12,17 @@
         <br>
         <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
-        <br>
         <a href="data_czas.php">Data i Czas</a>
          <br> 
         <a href="Formularz.html">Formularze</a>
         <br>
-        <a href="strona.php">Strona Formularza</a>
+        <a href="dane_do_bazy.html">Dane do bazy</a>
         <br>
-        <a href="dane_do_bazy.php">Dane do bazy</a>
-        <br>
-        <a href="delete.php">Delete</a>
+        <a href="delete.php">Usuwanie z bazy</a>
     </div>
 <?php
-  $servername = "mysql-szymonkozak.alwaysdata.net";
+    echo("<h3> FUNKCJE AGREGUJĄCE </h3>");
+$servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
 $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
