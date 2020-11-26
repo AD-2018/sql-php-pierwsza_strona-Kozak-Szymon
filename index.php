@@ -18,7 +18,7 @@
         <br>
         <a href="dane_do_bazy.html">Dane do bazy</a>
         <br>
-        <a href="delete.php">Usuwanie z bazy</a>
+        <a href="usun.php">Usuwanie z bazy</a>
     </div>
 <?php
     echo("<h3> INDEX.php </h3>");
