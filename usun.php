@@ -1,5 +1,5 @@
 
-//<?php
+<?php
 echo ("hello world");
 //echo("jestes w delete.php <br>");
 //echo("$_POST['id']");
