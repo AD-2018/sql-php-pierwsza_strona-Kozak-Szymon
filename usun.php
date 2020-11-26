@@ -1,6 +1,6 @@
 <?php
 echo("jestes w delete.php <br>");
-echo("$_POST['id_pracownicy']");
+echo("$_POST['id']");
 
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM Pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
+$sql = "DELETE FROM Pracownicy WHERE id_pracownicy=".$_POST['id'];
 echo("$sql");
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
