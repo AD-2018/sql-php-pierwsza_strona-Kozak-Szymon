@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE * FROM Pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
+$sql = "DELETE FROM Pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
 echo("$sql");
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
