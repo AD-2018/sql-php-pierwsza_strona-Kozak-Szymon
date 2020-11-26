@@ -1,7 +1,7 @@
 
 <?php
 echo("jestes w delete.php <br>");
-//echo("$_POST['id']");
+echo("$_POST['id']");
 
 //$servername = "mysql-szymonkozak.alwaysdata.net";
 //$username = "217196_jan";
