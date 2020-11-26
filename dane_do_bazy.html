@@ -6,30 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Dane do Bazy</title>
 </head>
-<body>
-	
-<?php
-    echo("<h3> INDEX.php </h3>");
-$servername = "mysql-szymonkozak.alwaysdata.net";
-$username = "217196_jan";
-$password = "Kacpertorudamałpa_12";
-$dbname = "szymonkozak_pracownicy";
-
-$conn = new mysqli ($servername, $username, $password, $dbname);
-    echo("<h3> PIERWOWZÓR </h3>");
-$sql = "SELECT * FROM pracownicy";
-    echo ("<li>".$sql."</li><br><br>");
-$result = mysqli_query($conn, $sql);
-    echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>imie</th><th>zarobki</th><th>data_urodzenia</th><th>dzial</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo ('<tr>');
-                echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
-?>
-	
-	<div class = "nav">
+<body>	
+<div class = "nav">
         	<a href="index.php">strona główna</a>
         	<br>
         	<a href="pracownicy_organizacja.php">pracownicy organizacja</a>
@@ -41,7 +19,7 @@ $result = mysqli_query($conn, $sql);
         	<a href="Formularz.html">Formularze</a>
         	<br>
         	<a href="delete.php">Usuwanie z bazy</a>
-    	</div>
+  </div>
 <form action="insert.php" method="POST">
 	<label>Imie:</label>
 	<input type="text" name="imie"></br>
