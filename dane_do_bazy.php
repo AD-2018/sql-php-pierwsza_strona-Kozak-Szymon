@@ -21,24 +21,21 @@
         	<a href="delete.php">Usuwanie z bazy</a>
   </div>
 <form action="insert.php" method="POST">
-	<b/>Imie:</b><c>
+	<label>Imie:</label>
 	<input type="text" name="imie"></br>
-	<b/>Zarobki:</b><c>
+	<label>Zarobki:</label>
 	<input type="number" name="dzial"></br>
-	<b/>Dzial:</b><c>
+	<label>Dzial:</label>
 	<input type="number" name="zarobki"></br>
-        <b/>Data Urodzenia:</b><c>
+        <label>Data Urodzenia</label>
 	<input type="date" name="data_urodzenia"></br>
 	<input type="submit" value="dodaj pracownika">
 </form>
-
-
 <h3>usuwanie pracownika</h3>
 <form action="delete.php" method="POST">
 	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
    <input type="submit" value="usuń pracownika">
 </form>
-
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
