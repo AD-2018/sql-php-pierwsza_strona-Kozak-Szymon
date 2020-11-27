@@ -33,11 +33,10 @@
 </form>
 
 
-<h3>Usuwanie z bazy</h3>
+<h3>usuwanie pracownika</h3>
 <form action="delete.php" method="POST">
-   <label>Id Pracownika:</label>
-   <input type="number" name="id"></br>
-   <input type="submit" value="Zapisz w zmiennej $_POST['id']">
+	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
+   <input type="submit" value="usuń pracownika">
 </form>
 
 <?php
