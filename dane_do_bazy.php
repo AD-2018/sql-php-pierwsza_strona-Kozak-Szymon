@@ -21,13 +21,13 @@
         	<a href="delete.php">Usuwanie z bazy</a>
   </div>
 <form action="insert.php" method="POST">
-	<label>Imie:</label>
+	<b/>Imie:</b><c>
 	<input type="text" name="imie"></br>
-	<label>Dzial:</label>
+	<b/>Zarobki:</b><c>
 	<input type="number" name="dzial"></br>
-	<label>Zarobki</label>
+	<b/>Dzial:</b><c>
 	<input type="number" name="zarobki"></br>
-	<label>Data urodzenia</label>
+        <b/>Data Urodzenia:</b><c>
 	<input type="date" name="data_urodzenia"></br>
 	<input type="submit" value="dodaj pracownika">
 </form>
