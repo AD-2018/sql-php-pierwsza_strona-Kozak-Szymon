@@ -20,17 +20,18 @@
         	<br>
         	<a href="delete.php">Usuwanie z bazy</a>
   </div>
-<form action="insert.php" method="POST">
-	<label>Imie:</label>
-	<input type="text" name="imie"></br>
-	<label>Zarobki:</label>
-	<input type="number" name="dzial"></br>
-	<label>Dzial:</label>
-	<input type="number" name="zarobki"></br>
-        <label>Data Urodzenia</label>
-	<input type="date" name="data_urodzenia"></br>
-	<input type="submit" value="dodaj pracownika">
-</form>
+<h3>DODAJ PRACOWNIKA</h3>
+    <form action="insert.php" method="POST">
+        <p>Imie</p>
+        <input type="text" name="imie"></br>
+    	<p>Dzial</p>
+        <input type="number" name="dzial"></br>
+    	<p>Zarobki</p>
+        <input type="number" name="zarobki"></br>
+	<p>Data urodzenia</p>
+        <input type="date" name="data_urodzenia"></br>
+        <input type="submit" value="dodaj pracownika">
+    </form>
 <h3>usuwanie pracownika</h3>
 <form action="delete.php" method="POST">
 	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
