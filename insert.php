@@ -1,8 +1,3 @@
-<html>
-<head>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -14,12 +9,10 @@ $sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki,data_urodzeni
 
 
 if ($conn->query($sql) === TRUE) {
-  header('https://kozak-szymon.herokuapp.com/dane_do_bazy.php');
+  echo ("mamy mózg");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
 ?>
-</body>
-</html>
