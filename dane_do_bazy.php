@@ -22,13 +22,13 @@
   </div>
 <h3>DODAJ PRACOWNIKA</h3>
     <form action="insert.php" method="POST">
-        <p>Imie</p>
+        <p>Imie:</p>
         <input type="text" name="imie"></br>
-    	<p>Dzial</p>
+    	<p>Dzial:</p>
         <input type="number" name="dzial"></br>
-    	<p>Zarobki</p>
+    	<p>Zarobki:</p>
         <input type="number" name="zarobki"></br>
-	<p>Data urodzenia</p>
+	<p>Data urodzenia:</p>
         <input type="date" name="data_urodzenia"></br>
         <input type="submit" value="dodaj pracownika">
     </form>
