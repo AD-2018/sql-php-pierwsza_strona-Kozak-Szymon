@@ -45,14 +45,14 @@ $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
     echo("<h3> PIERWOWZÓR </h3>");
-$sql = "SELECT * FROM pracownicy, organizacja WHERE nazwa_dzial=dzial";
+$sql = "SELECT * FROM pracownicy, organizacja WHERE id_org=dzial";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
     echo ("<tr><th>ID</th><th>Imie</th><th>Zarobki</th><th>Data Urodzenia</th><th>Dzial</th><th>Usun</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["id_pracownicy"].'</td><td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>'.
+                echo ('<td>'.$row["id_pracownicy"].'</td><td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["id_org"].'</td>'.
 		
 	'<td>
 	
