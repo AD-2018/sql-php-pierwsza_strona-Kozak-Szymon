@@ -53,14 +53,15 @@ $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_pracownicy"].'</td><td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>'.
-		'<td>
 		
+	'<td>
+	
 	  <form action="delete.php" method="POST">
-          <input type="hidden" name="id" value="'.$row['id_pracownicy'].'"></br>
-          <input type="submit" value="Usuń">
+          <input type="yext" name="id_pracownicy" value="'.$row["id_pracownicy"].'" hidden>
+          <input type="submit" value="Usun">
     	  </form>
-		</td>');
-		echo ('</tr>');
+	  </td>');
+	        echo ('</tr>');
         }echo ('</table>');
 ?>
 </body>
