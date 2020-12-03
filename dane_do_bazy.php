@@ -56,11 +56,11 @@ $result = mysqli_query($conn, $sql);
 		
 	'<td>
 	
-	  <form action="delete.php" method="POST">
-          <input type="text" name="id_pracownicy" value="'.$row["id_pracownicy"].'" hidden>
-          <input type="submit" value="Usun">
-    	  </form>
-	  </td>');
+	 	 <form action="delete.php" method="POST">
+          		<input type="text" name="ID" value="'.$row["id_pracownicy"].'" hidden>
+          		<input type="submit" value="Usun">
+    	  	</form>
+	</td>');
 	        echo ('</tr>');
         }echo ('</table>');
 ?>
