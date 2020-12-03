@@ -45,7 +45,7 @@ $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
     echo("<h3> PIERWOWZÓR </h3>");
-$sql = "SELECT * FROM pracownicy, organizacja WHERE id_org=dzial";
+$sql = "SELECT * FROM pracownicy, organizacja WHERE nazwa_dzial=dzial";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
