@@ -62,6 +62,19 @@ $result = mysqli_query($conn, $sql);
     	  	</form>
 	</td>');
 	        echo ('</tr>');
+  	}echo ('</table>');
+
+
+echo("<h3> ŚCIĄGAWKA DZIAŁÓW </h3>");
+$sql = "SELECT * FROM organizacja";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID Org</th><th>Nazwa Działu</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["id_org"].'</td><td>'.$row["nazwa_dzial"].'</td>');
+                echo ('</tr>');
         }echo ('</table>');
 ?>
 </body>
