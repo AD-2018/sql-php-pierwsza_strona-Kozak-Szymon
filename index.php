@@ -25,16 +25,6 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-
-    echo("<H3>LISTA</H3>");
-    echo ("<table>");
-    echo("<label for='pracownicy'>wybierz pracownika:</label>");
-    
-    echo("<select $sql='SELECT*FROM pracownicy'>");
-    echo("<tr value='td'>"'<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>'"</tr>");
-    echo ("</table>");
-    
-        
     echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
