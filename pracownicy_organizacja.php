@@ -28,6 +28,22 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
+    
+    echo ('<h2>Lista<h2>');
+	$sql ="select * from pracownicy";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="pracownicy">');
+	while($row = mysqli_fetch_assoc($result)) {
+         echo '<option value="'.$row['id_pracownicy'].'">';
+	    echo($row['imie'].', '.$row['zarobki'].', '.$row['data_urodzenia'].', '.$row['dzial']);
+ 	    echo "</option>";
+	};
+echo('</select>');
+echo("<br>");
     echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
