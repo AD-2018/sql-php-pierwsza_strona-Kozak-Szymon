@@ -28,13 +28,41 @@ $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
     echo("<h3> BIBLIOTEKA </h3>");
-$sql = "SELECT * FROM bibl_book, bibl_autor,bibl_tytul where(id_autor=autor AND id_tytul=pisarz";
+$sql = "SELECT * FROM bibl_book";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>Wypozyczenia</th></tr>");
+    echo ("<tr><th>ID</th><th>Pisarz</th><th>Powiesc</th><th>Wypozyczenia</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["id_book"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
+                echo ('<td>'.$row["id_book"].'</td><td>'.$row["pisarz"].'</td><td>'.$row["powiesc"].'</td><td>'.$row["wypoz"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    
+    
+    echo("<h3> BIBLIOTEKA </h3>");
+$sql = "SELECT * FROM bibl_autor";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>Autor</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    
+    
+    echo("<h3> BIBLIOTEKA </h3>");
+$sql = "SELECT * FROM bibl_tytul";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>ksiazka</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
