@@ -41,7 +41,7 @@ $result = mysqli_query($conn, $sql);
     
     
     
-    echo("<h3> BIBLIOTEKA </h3>");
+    echo("<h3> AUTORZY </h3>");
 $sql = "SELECT * FROM bibl_autor";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -55,7 +55,7 @@ $result = mysqli_query($conn, $sql);
     
     
     
-    echo("<h3> BIBLIOTEKA </h3>");
+    echo("<h3> TYTULY </h3>");
 $sql = "SELECT * FROM bibl_tytul";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -64,5 +64,18 @@ $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
+    
+    
+    echo("<h3> CALOSC </h3>");
+$sql = "SELECT * FROM bibl_book, bibl_autor,bibl_tytul where(id_autor=autor AND id_tytul=pisarz";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>Wypozyczenia</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["id_book"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
