@@ -69,7 +69,7 @@ $result = mysqli_query($conn, $sql);
     
     
     echo("<h3> CALOSC </h3>");
-$sql = "SELECT * FROM bibl_book, bibl_autor,bibl_tytul where(id_autor=autor AND id_tytul=pisarz";
+$sql = "SELECT * FROM bibl_tytul, bibl_book, bibl_autor where (bibl_book.powiesc=bibl_tytul.id_tytul AND bibl_book.pisarz=bibl_autor.id_autor";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
