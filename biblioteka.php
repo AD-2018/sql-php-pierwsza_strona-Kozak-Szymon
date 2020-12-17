@@ -66,16 +66,4 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-    
-    
-    echo("<h3> CALOSC </h3>");
-$sql = "select (biblAutor_biblTytul.id) as ID_TAB, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id";
-    echo ("<li>".$sql."</li><br><br>");
-$result = mysqli_query($conn, $sql);
-    echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>Wypozyczenia</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo ('<tr>');
-                echo ('<td>'.$row["id_book"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
+   
