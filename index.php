@@ -17,6 +17,8 @@
         <a href="Formularz.html">Formularze</a>
         <br>
         <a href="dane_do_bazy.php">Dane do bazy</a>
+        <br>
+        <a href="biblioteka.php">biblioteka</a>
     </div>
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";
