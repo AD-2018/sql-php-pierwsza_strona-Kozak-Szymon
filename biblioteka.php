@@ -35,7 +35,7 @@ $result = mysqli_query($conn, $sql);
     echo ("<tr><th>ID</th><th>Pisarz</th><th>Powiesc</th><th>Wypozyczenia</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["id_book"].'</td><td>'.$row["pisarz"].'</td><td>'.$row["powiesc"].'</td><td>'.$row["wypoz"].'</td>');
+                echo ('<td>'.$row["id_book"].'</td><td>'.$row["id_autor"].'</td><td>'.$row["id_tytul"].'</td><td>'.$row["wypoz"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
     
@@ -69,7 +69,7 @@ $result = mysqli_query($conn, $sql);
     
     
     echo("<h3> CALOSC </h3>");
-$sql = "SELECT * FROM bibl_tytul, bibl_book, bibl_autor where (bibl_book.powiesc=bibl_tytul.id_tytul AND bibl_book.pisarz=bibl_autor.id_autor";
+$sql = "select (biblAutor_biblTytul.id) as ID_TAB, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
