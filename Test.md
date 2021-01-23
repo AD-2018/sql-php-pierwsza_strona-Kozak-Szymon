@@ -1,2 +1,3 @@
 #nienawidze git huba
-xD xD
+xD
+Select * From pracownicy
