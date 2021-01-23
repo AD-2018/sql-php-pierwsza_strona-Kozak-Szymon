@@ -1,1 +1,1 @@
-wprowadzamy zmiany w kodzie 
+wprowadzono zmiane 
