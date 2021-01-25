@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
     
     <div class = "nav">
-        <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
+        <a href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
+        <a href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
         <br>
-        <a href="data_czas.php">Data i Czas</a>
+        <a href="/pracownicy/data_czas.php">Data i Czas</a>
          <br> 
-        <a href="Formularz.html">Formularze</a>
+        <a href="/pracownicy/Formularz.html">Formularze</a>
         <br>
-        <a href="dane_do_bazy.php">Dane do bazy</a>
+        <a href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
         <br>
-        <a href="Biblioteka/biblioteka.php">Biblioteka</a>
+        <a href="/Biblioteka/biblioteka.php">Biblioteka</a>
     </div>
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";
