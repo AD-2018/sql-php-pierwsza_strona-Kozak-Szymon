@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/główny/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
     
     <div class = "nav">
-        <a href="/główny/index.php">strona główna</a>
+        <a href="/index.php">strona główna</a>
         <br>
         <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
