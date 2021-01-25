@@ -8,15 +8,15 @@
     <h1>Szymon Kozak</h1>
     
     <div class = "nav">
-        <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
+        <a href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
+        <a href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
         <br>
-        <a href="data_czas.php">Data i Czas</a>
+        <a href="/pracownicy/data_czas.php">Data i Czas</a>
          <br> 
         <a href="/pracownicy/Formularz.html">Formularze</a>
         <br>
-        <a href="dane_do_bazy.php">Dane do bazy</a>
+        <a href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
         <br>
         <a href="/Biblioteka/biblioteka.php">Biblioteka</a>
     </div>
