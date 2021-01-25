@@ -8,7 +8,7 @@
     <h1>Szymon Kozak</h1>
     
     <div class = "nav">
-        <a href="index.php">strona główna</a>
+        <a href="sql-php-pierwsza_strona-Kozak-Szymon/index.php">strona główna</a>
         <br>
         <a href="pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
