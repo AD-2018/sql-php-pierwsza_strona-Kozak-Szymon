@@ -18,7 +18,7 @@
         <br>
         <a href="dane_do_bazy.php">Dane do bazy</a>
         <br>
-        <a href="Biblioteka/biblioteka.php">Biblioteka</a>
+        <a href="/Biblioteka/biblioteka.php">Biblioteka</a>
     </div>
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";
