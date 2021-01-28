@@ -30,7 +30,7 @@ $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
      echo ('<h2>Biblioteka<h2>');
-	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_tytul_bibl_autor where bibl_autor.id_autor=bibl_tytul.id_tytul";
+	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_tytul.id_tytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
@@ -38,7 +38,7 @@ if ( $result) {
     }
 echo('<select name="bibl_autor">');
 	while($row = mysqli_fetch_assoc($result)) {
-          echo '<option value="'.$row['id_autor'].'">';
+          echo '<option value="'.$row['id'].'">';
 	    echo($row['autor'].', '.$row['tytul']);
  	    echo "</option>";
 	};
