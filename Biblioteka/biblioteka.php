@@ -29,7 +29,22 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-     echo ('<h2>Autorzy<h2>');
+     echo ('<h2>Biblioteka<h2>');
+	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_tytul_bibl_autor where bibl_autor.id_autor=bibl_tytul.id_tytul";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="bibl_autor">');
+	while($row = mysqli_fetch_assoc($result)) {
+          echo '<option value="'.$row['id_autor'].'">';
+	    echo($row['autor'].', '.$row['tytul']);
+ 	    echo "</option>";
+	};
+echo('</select>');
+	
+	echo ('<h2>Autorzy<h2>');
 	$sql ="SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
