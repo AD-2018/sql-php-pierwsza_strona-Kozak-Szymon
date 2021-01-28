@@ -42,37 +42,7 @@ echo('<select name="bibl_autor">');
 	    echo($row['autor'].', '.$row['tytul']);
  	    echo "</option>";
 	};
-echo('</select>');
-	
-	echo ('<h2>Autorzy<h2>');
-	$sql ="SELECT * FROM bibl_autor";
-$result = mysqli_query($conn, $sql);
-if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-echo('<select name="bibl_autor">');
-	while($row = mysqli_fetch_assoc($result)) {
-         echo '<option value="'.$row['id_autor'].'">';
-	    echo($row['autor']);
- 	    echo "</option>";
-	};
-echo('</select>');
-	echo ('<h2>Ksiazki<h2>');
-	$sql ="SELECT * FROM bibl_tytul";
-$result = mysqli_query($conn, $sql);
-if ( $result) {
-    } else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
-echo('<select name="bibl_tytul">');
-	while($row = mysqli_fetch_assoc($result)) {
-         echo '<option value="'.$row['id_tytul'].'">';
-	    echo($row['tytul']);
- 	    echo "</option>";
-	};
-echo('</select>');
-		
+echo('</select>');	
     echo("<h3> BIBLIOTEKA </h3>");
 $sql = "SELECT * FROM bibl_book";
     echo ("<li>".$sql."</li><br><br>");
