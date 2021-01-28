@@ -36,24 +36,24 @@ if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<select name="pracownicy">');
+echo('<select name="bibl_autor">');
 	while($row = mysqli_fetch_assoc($result)) {
          echo '<option value="'.$row['id_autor'].'">';
 	    echo($row['autor']);
  	    echo "</option>";
 	};
     
-     echo ('<h2>Książki<h2>');
-	$sql ="select * from pracownicy";
+     echo ('<h2>Ksiazki<h2>');
+	$sql ="SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<select name="pracownicy">');
+echo('<select name="bibl_tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-         echo '<option value="'.$row['id_pracownicy'].'">';
-	    echo($row['imie'].', '.$row['zarobki'].', '.$row['data_urodzenia'].', '.$row['dzial']);
+         echo '<option value="'.$row['id_tytul'].'">';
+	    echo($row['tytul']);
  	    echo "</option>";
 	};
     echo("<h3> BIBLIOTEKA </h3>");
