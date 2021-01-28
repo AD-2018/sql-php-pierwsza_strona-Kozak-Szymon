@@ -41,7 +41,7 @@ echo('<select name="bibl_autor">');
          echo '<option value="'.$row['id_autor'].'">';
 	    echo($row['autor']);
  	    echo "</option>";
-	};
+		
     echo("<h3> BIBLIOTEKA </h3>");
 $sql = "SELECT * FROM bibl_book";
     echo ("<li>".$sql."</li><br><br>");
