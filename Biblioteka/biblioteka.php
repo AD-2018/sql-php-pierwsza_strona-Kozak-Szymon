@@ -30,7 +30,7 @@ $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
      echo ('<h2>Biblioteka<h2>');
-	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_tytul.id_tytul";
+	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
