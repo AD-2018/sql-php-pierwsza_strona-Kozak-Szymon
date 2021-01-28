@@ -29,6 +29,33 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
+     echo ('<h2>Autorzy<h2>');
+	$sql ="SELECT * FROM bibl_autor";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="pracownicy">');
+	while($row = mysqli_fetch_assoc($result)) {
+         echo '<option value="'.$row['id_autor'].'">';
+	    echo($row['autor']);
+ 	    echo "</option>";
+	};
+    
+     echo ('<h2>Książki<h2>');
+	$sql ="select * from pracownicy";
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+echo('<select name="pracownicy">');
+	while($row = mysqli_fetch_assoc($result)) {
+         echo '<option value="'.$row['id_pracownicy'].'">';
+	    echo($row['imie'].', '.$row['zarobki'].', '.$row['data_urodzenia'].', '.$row['dzial']);
+ 	    echo "</option>";
+	};
     echo("<h3> BIBLIOTEKA </h3>");
 $sql = "SELECT * FROM bibl_book";
     echo ("<li>".$sql."</li><br><br>");
