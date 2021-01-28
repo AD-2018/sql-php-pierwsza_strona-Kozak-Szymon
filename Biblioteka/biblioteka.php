@@ -43,17 +43,17 @@ echo('<select name="bibl_autor">');
  	    echo "</option>";
 	};
 echo('</select>');
-	echo ('<h2>Autorzy<h2>');
-	$sql ="SELECT * FROM bibl_autor";
+	echo ('<h2>ksiazki<h2>');
+	$sql ="SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
     } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-echo('<select name="bibl_autor">');
+echo('<select name="bibl_tytul">');
 	while($row = mysqli_fetch_assoc($result)) {
-         echo '<option value="'.$row['id_autor'].'">';
-	    echo($row['autor']);
+         echo '<option value="'.$row['id_tytul'].'">';
+	    echo($row['tytul']);
  	    echo "</option>";
 	};
 echo('</select>');
