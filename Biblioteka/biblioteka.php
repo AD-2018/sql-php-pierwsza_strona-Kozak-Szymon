@@ -43,7 +43,7 @@ echo('<select name="bibl_autor">');
  	    echo "</option>";
 	};
 echo('</select>');
-	echo ('<h2>ksiazki<h2>');
+	echo ('<h2>Ksiazki<h2>');
 	$sql ="SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
