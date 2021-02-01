@@ -1,1 +1,2 @@
-wprowadzono zmiane gfeyghwewgewgw
+testuje polaczenie
+lol
