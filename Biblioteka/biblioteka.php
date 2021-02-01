@@ -46,7 +46,7 @@ echo('<select name="bibl_autor">');
  	    echo "</option>";
 	};
 echo('</select>');	
-    echo("<h3> BIBLIOTEKA </h3>");
+    echo("<h3>bibl_book</h3>");
 $sql = "SELECT * FROM bibl_book";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -60,7 +60,7 @@ $result = mysqli_query($conn, $sql);
     
     
  
-    echo("<h3> AUTORZY </h3>");
+    echo("<h3>bibl_autor</h3>");
 $sql = "SELECT * FROM bibl_autor";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -74,7 +74,7 @@ $result = mysqli_query($conn, $sql);
     
     
     
-    echo("<h3> TYTULY </h3>");
+    echo("<h3>bibl_autor</h3>");
 $sql = "SELECT * FROM bibl_tytul";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
