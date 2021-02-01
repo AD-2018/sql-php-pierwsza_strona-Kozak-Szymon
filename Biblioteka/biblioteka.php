@@ -86,7 +86,7 @@ $result = mysqli_query($conn, $sql);
    
 $conn = new mysqli ($servername, $username, $password, $dbname);
     echo("<h3> CALOSC </h3>");
-$sql = "select (biblAutor_biblTytul.id) as ID_TAB, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where bibl_autor.id=bibl_autor_id and bibl_tytul.id=bibl_tytul_id";
+$sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
