@@ -17,7 +17,7 @@
         <br> 
         <a href="/pracownicy/Formularz.html">Formularze</a>
         <br>
-        <a href="/pracownicy/dane_do_bazy.html">Dane do bazy</a>
+        <a href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
         <br>
         <a href="/pracownicy/delete.php">Usuwanie z bazy</a>
     </div>
