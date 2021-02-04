@@ -83,6 +83,7 @@ $result = mysqli_query($conn, $sql);
 	
 	echo("<h3>pomoc do dodawania i usuwania</h3>");
 echo("<div class='flexbox-containter3'>");
+        echo("<div>");
 $sql = "SELECT * FROM bibl_book";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -92,10 +93,10 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["id_book"].'</td><td>'.$row["id_autor"].'</td><td>'.$row["id_tytul"].'</td><td>'.$row["wypoz"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-    
+        echo("</div>");
     
  
-
+        echo("<div>");
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -105,10 +106,10 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+        echo("</div>");
     
     
-    
-
+        echo("<div>");
 $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -118,4 +119,6 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+        echo("</div>");
 echo("</div>");
+        

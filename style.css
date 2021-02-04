@@ -7,6 +7,9 @@ display: flex;
 .flexbox-containter3{
   display: flex;
 }
+.flexbox-containter3 div{
+  margin: 4px;
+}
 
 table {
   border-collapse: collapse;
