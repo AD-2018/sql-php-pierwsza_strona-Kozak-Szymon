@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="/style.css">
+<title>Szymon Kozak</title>
 </head>
 
 <div class = "nav">

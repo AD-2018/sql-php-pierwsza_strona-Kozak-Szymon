@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="/style.css">
+<title>Szymon Kozak</title>
 </head>
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
