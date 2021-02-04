@@ -23,7 +23,7 @@
         <br>
         <a href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
-<div class="flexbox-containter">
+<div class="flexbox-containter1">
     <div>
         <h3>DODAJ TYTUL</h3>
         <form action="/Biblioteka/new_tytul.php" method="POST">

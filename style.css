@@ -1,9 +1,8 @@
 body {
   background-color: pink;
 }
-.flexbox-containter{
+.flexbox-containter1{
 display: flex;
-border: 1px solid blue;
 }
 
 table {
