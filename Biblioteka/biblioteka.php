@@ -23,6 +23,21 @@
         <br>
         <a href="/Biblioteka/biblioteka.php">biblioteka</a>
     </div>
+
+    <h3>DODAJ TYTUL</h3>
+    <form action="/Biblioteka/new_book.php" method="POST">
+    	<p>Tytul:</p>
+        <input type="text" name="tytul"></br>
+        <input type="submit" value="dodaj tytul">
+    </form>
+    
+    <h3>DODAJ AUTORA</h3>
+    <form action="/Biblioteka/new_autor.php" method="POST">
+    	<p>Tytul:</p>
+        <input type="text" name="autor"></br>
+        <input type="submit" value="dodaj autora">
+    </form>
+
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
