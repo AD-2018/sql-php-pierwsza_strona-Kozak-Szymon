@@ -9,6 +9,7 @@ display: flex;
 }
 .flexbox-containter3 div{
   margin: 4px;
+  border: 1px solid blue;
 }
 
 table {
