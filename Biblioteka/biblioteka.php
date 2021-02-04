@@ -23,6 +23,7 @@
         <br>
         <a href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
+<h1>Biblioteka</h1>
 <div class="flexbox-containter1">
     <div>
         <h3>DODAJ TYTUL</h3>
@@ -49,7 +50,6 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-        echo('<h2>BIBLIOTEKA<h2>');
 	echo('<br>');
 	echo('<h2>Listy:<h2>');
 	echo('<h2>lista NR 1<h2>');
