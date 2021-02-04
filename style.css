@@ -1,6 +1,9 @@
 body {
   background-color: pink;
 }
+.flexbox-containter{
+display: flex;
+}
 
 table {
   border-collapse: collapse;
@@ -19,12 +22,4 @@ tr:nth-child(even) {background-color: red;}
 th {
   background-color: black;
   color: white;
-}
-<h1>
-{
-  color: orange;
-}
-</h1>
-.flexbox-container{
-  display: flex;
 }
