@@ -81,7 +81,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
 	
-	echo("<h3>pomoc do dodawania i usuwania</h3>")
+	echo("<h3>pomoc do dodawania i usuwania</h3>");
 echo("<div class='flexbox-containter3'>");
 $sql = "SELECT * FROM bibl_book";
 $result = mysqli_query($conn, $sql);
