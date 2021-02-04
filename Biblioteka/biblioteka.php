@@ -85,7 +85,6 @@ $result = mysqli_query($conn, $sql);
 echo("<div class='flexbox-containter3'>");
     echo("<h3>Baza</h3>");
 $sql = "SELECT * FROM bibl_book";
-    echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
     echo ("<tr><th>ID</th><th>Pisarz</th><th>Powiesc</th><th>Wypozyczenia</th></tr>");
@@ -99,7 +98,6 @@ $result = mysqli_query($conn, $sql);
  
     echo("<h3>Pisarz</h3>");
 $sql = "SELECT * FROM bibl_autor";
-    echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
     echo ("<tr><th>ID</th><th>Autor</th></tr>");
@@ -113,7 +111,6 @@ $result = mysqli_query($conn, $sql);
     
     echo("<h3>Ksiazka</h3>");
 $sql = "SELECT * FROM bibl_tytul";
-    echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
     echo ("<tr><th>ID</th><th>ksiazka</th></tr>");
