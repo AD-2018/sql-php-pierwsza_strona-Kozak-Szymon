@@ -33,7 +33,7 @@
 
     <h3>DODAJ AUTORA</h3>
     <form action="/Biblioteka/new_autor.php" method="POST">
-    	<p>Tytul:</p>
+    	<p>AUTOR:</p>
         <input type="text" name="autor"></br>
         <input type="submit" value="dodaj autora">
     </form>

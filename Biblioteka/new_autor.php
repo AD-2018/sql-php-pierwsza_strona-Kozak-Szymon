@@ -13,8 +13,8 @@ if ($conn->connect_error) {
 }
 
 //definiujemy zapytanie $sql
-$sql = "INSERT INTO bibl_tytul (id_autor,autor) 
-       VALUES (null, '".$_POST['autor']."')";
+$sql = "INSERT INTO bibl_autor (id_autor,autor) 
+      VALUES (null, '".$_POST['autor']."')";
 
 //wyświetlamy zapytanie $sql
 echo "<li>". $sql;
