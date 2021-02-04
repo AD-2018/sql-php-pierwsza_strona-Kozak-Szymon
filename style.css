@@ -3,6 +3,7 @@ body {
 }
 .flexbox-containter{
 display: flex;
+border: 1px solid blue;
 }
 
 table {
