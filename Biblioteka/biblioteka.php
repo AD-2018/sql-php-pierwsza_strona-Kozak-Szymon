@@ -82,7 +82,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
 	
 	
-	
+echo("<div class='flexbox-containter3'>");
     echo("<h3>Baza</h3>");
 $sql = "SELECT * FROM bibl_book";
     echo ("<li>".$sql."</li><br><br>");
@@ -122,3 +122,4 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+echo("</div>");
