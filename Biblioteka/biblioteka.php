@@ -24,19 +24,22 @@
         <a href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
 <div class="flexbox-containter">
-<h3>DODAJ TYTUL</h3>
-    <form action="/Biblioteka/new_tytul.php" method="POST">
+    <div>
+        <h3>DODAJ TYTUL</h3>
+        <form action="/Biblioteka/new_tytul.php" method="POST">
     	<p>Tytul:</p>
         <input type="text" name="tytul"></br>
         <input type="submit" value="dodaj tytul">
-    </form>
-
-    <h3>DODAJ AUTORA</h3>
-    <form action="/Biblioteka/new_autor.php" method="POST">
+        </form>
+    </div>
+    <div>
+        <h3>DODAJ AUTORA</h3>
+        <form action="/Biblioteka/new_autor.php" method="POST">
     	<p>AUTOR:</p>
         <input type="text" name="autor"></br>
         <input type="submit" value="dodaj autora">
-    </form>
+        </form>
+    </div>
 </div>
 
 <?php   
