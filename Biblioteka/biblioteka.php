@@ -23,7 +23,7 @@
         <br>
         <a href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
-
+<div class="flexbox-containter">
 <h3>DODAJ TYTUL</h3>
     <form action="/Biblioteka/new_tytul.php" method="POST">
     	<p>Tytul:</p>
@@ -37,6 +37,7 @@
         <input type="text" name="autor"></br>
         <input type="submit" value="dodaj autora">
     </form>
+</div>
 
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";

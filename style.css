@@ -25,3 +25,6 @@ th {
   color: orange;
 }
 </h1>
+.flexbox-container{
+  display: flex;
+}
