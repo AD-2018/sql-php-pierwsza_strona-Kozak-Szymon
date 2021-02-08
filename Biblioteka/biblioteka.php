@@ -25,7 +25,7 @@
         <a class="panel" href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
 <h1>Biblioteka</h1>
-<div class="flexbox-containter1">
+<div class="flexbox-containter">
     <div>
         <h3>DODAJ TYTUL</h3>
         <form action="/Biblioteka/new_tytul.php" method="POST">
@@ -51,7 +51,7 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-	echo('<br>');
+	echo("<div class='listy'>");
 	echo('<h2>Listy:<h2>');
 	echo('<h2>lista NR 1<h2>');
 	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
@@ -67,6 +67,7 @@ echo('<select name="bibl_autor">');
  	    echo "</option>";
 	};
 	echo('</select>');
+    echo("</div>");
 
 	echo("<h3>pomoc do dodawania i usuwania</h3>");
     echo("<div class='tabelki'>");
