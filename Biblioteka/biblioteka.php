@@ -71,17 +71,6 @@ echo('<select name="bibl_autor">');
 
     echo("<div class='tabelki'>");
         echo("<div class='wnetrze'>");
-$sql = "SELECT * FROM bibl_book";
-$result = mysqli_query($conn, $sql);
-    echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Pisarz</th><th>Powiesc</th><th>Wypozyczenia</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo ('<tr>');
-                echo ('<td>'.$row["id_book"].'</td><td>'.$row["id_autor"].'</td><td>'.$row["id_tytul"].'</td><td>'.$row["wypoz"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
-        echo("</div>");
-        echo("<div class='wnetrze'>");
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
