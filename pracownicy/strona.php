@@ -6,17 +6,17 @@
 </head>
 
 <div class = "nav">
-        <a href="/index.php">strona główna</a>
+        <a class="panel" href="/index.php">strona główna</a>
         <br>
-        <a href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
+        <a class="panel" href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
+        <a class="panel" href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
         <br>
-        <a href="/pracownicy/data_czas.php">Data i Czas</a>
+        <a class="panel" href="/pracownicy/data_czas.php">Data i Czas</a>
         <br>
-        <a href="/pracownicy/Formularz.html">Formularze</a>
+        <a class="panel" href="/pracownicy/Formularz.html">Formularze</a>
         <br>
-        <a href="/pracownicy/strona.php">Strona Formularza</a>
+        <a class="panel" href="/pracownicy/strona.php">Strona Formularza</a>
     </div>
 
 
