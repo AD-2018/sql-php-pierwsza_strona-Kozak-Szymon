@@ -107,21 +107,19 @@ $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>'.
-                '<td>
+		
+	'<td>
 	
-                <form action="del_autor.php" method="POST">
-                        <input type="text" name="id_autor" value="'.$row["id_autor"].'" hidden>
-                        <input type="submit" value="Usun">
-                    </form>
-          </td>');
-                  echo ('</tr>');
-            }echo ('</table>'););
-                echo ('</tr>');
-        }echo ('</table>');
-        echo("</div>");
-    
-    
-        echo("<div>");
+	 	 <form action="del_autor.php" method="POST">
+          		<input type="text" name="id_autor" value="'.$row["id_autor"].'" hidden>
+          		<input type="submit" value="Usun">
+    	  	</form>
+	</td>');
+	        echo ('</tr>');
+  	}echo ('</table>');
+      echo("</div>");
+        
+      echo("<div>");
 $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
