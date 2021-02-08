@@ -121,6 +121,7 @@ $result = mysqli_query($conn, $sql);
 	        echo ('</tr>');
   	}echo ('</table>');
       echo("</div>");
+echo("</div>");
 
 echo("<h3> CALOSC </h3>");
 $sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
