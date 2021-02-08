@@ -28,7 +28,8 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-    echo("<h3> PIERWOWZÓR </h3>");
+echo("<div class='tabelki'>");
+echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -78,7 +79,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-    
+echo("</div>");
     ?>
     </body>
 </html>
