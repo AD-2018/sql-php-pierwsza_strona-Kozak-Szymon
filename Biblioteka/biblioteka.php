@@ -106,7 +106,16 @@ $result = mysqli_query($conn, $sql);
     echo ("<tr><th>ID</th><th>Autor</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>');
+                echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>'.
+                '<td>
+	
+                <form action="del_autor.php" method="POST">
+                        <input type="text" name="id_autor" value="'.$row["id_autor"].'" hidden>
+                        <input type="submit" value="Usun">
+                    </form>
+          </td>');
+                  echo ('</tr>');
+            }echo ('</table>'););
                 echo ('</tr>');
         }echo ('</table>');
         echo("</div>");
