@@ -1,6 +1,7 @@
 body {
   background-color: pink;
   flex-wrap: wrap;
+  display:flex;
 }
 .flexbox-containter1{
 display: flex;
