@@ -43,23 +43,6 @@
     </div>
 </div>
 
-<div class="flexbox-containter2">
-    <div>
-    <h3>USUN TYTUL</h3>
-    <form action="/Biblioteka/del_book.php" method="POST">
-	<p>PODAJ ID:</p>  <input type="number" name="id_pracownicy"></br>
-   <input type="submit" value="usun tytul">
-</form>
-    </div>
-    <div>
-    <h3>USUN AUTORA</h3>
-    <form action="/Biblioteka/del_autor.php" method="POST">
-	<p>PODAJ ID:</p>  <input type="number" name="id_pracownicy"></br>
-    <input type="submit" value="usun autora">
-    </div>
-</div>
-
-
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -103,7 +86,7 @@ $result = mysqli_query($conn, $sql);
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>usun</th></tr>");
+    echo ("<tr><th>ID</th><th>Autor</th><th>USUN</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>'.
@@ -120,17 +103,24 @@ $result = mysqli_query($conn, $sql);
       echo("</div>");
         
       echo("<div>");
-$sql = "SELECT * FROM bibl_tytul";
+        $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>ksiazka</th></tr>");
+    echo ("<tr><th>ID</th><th>tytul</th><th>USUN</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
-                echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
-        echo("</div>");
-echo("</div>");
+                echo ('<td>'.$row["id_tytul"].'</td><td>'.$row["tytul"].'</td>'.
+		
+	'<td>
+	
+	 	 <form action="del_book.php" method="POST">
+          		<input type="text" name="id_tytul" value="'.$row["id_tytul"].'" hidden>
+          		<input type="submit" value="Usun">
+    	  	</form>
+	</td>');
+	        echo ('</tr>');
+  	}echo ('</table>');
+      echo("</div>");
 
 echo("<h3> CALOSC </h3>");
 $sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
