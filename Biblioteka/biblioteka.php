@@ -81,8 +81,6 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
         echo("</div>");
-    
- 
         echo("<div class='wnetrze'>");
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
@@ -102,7 +100,6 @@ $result = mysqli_query($conn, $sql);
 	        echo ('</tr>');
   	}echo ('</table>');
       echo("</div>");
-        
       echo("<div class='wnetrze'>");
         $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);

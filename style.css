@@ -3,20 +3,6 @@ body {
   flex-wrap: wrap;
   display:flex;
 }
-.flexbox-containter1{
-display: flex;
-}
-.flexbox-containter3{
-  display: flex;
- 
-}
-.flexbox-containter3 div{
-  margin: 4px;
-}
-.flexbox-containter2 {
-  display:flex;
-}
-
 /* dane odnosnie tabeli */
 table {
   border-collapse: collapse;
@@ -55,5 +41,7 @@ th {
   width: 100%;
   margin: 10px;
 }
-
-
+.listy{
+  margin: 10px;
+  width: 100%
+}
