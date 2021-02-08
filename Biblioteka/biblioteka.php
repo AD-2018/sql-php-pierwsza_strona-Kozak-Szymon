@@ -8,6 +8,7 @@
 <div class= "imie">   
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
+    <h1>Biblioteka</h1>
 </div>    
     <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
@@ -24,7 +25,6 @@
         <br>
         <a class="panel" href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
-<h1>Biblioteka</h1>
 <div class="flexbox-containter">
     <div>
         <h3>DODAJ TYTUL</h3>
