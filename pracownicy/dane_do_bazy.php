@@ -44,6 +44,8 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
+echo("<div class='tabelki'>");
+    echo("<div class='wnetrze'>");
 echo("<h3> ŚCIĄGAWKA DZIAŁÓW </h3>");
 $sql = "SELECT * FROM organizacja";
     echo ("<li>".$sql."</li><br><br>");
@@ -55,8 +57,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["id_org"].'</td><td>'.$row["nazwa_dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');   
-
-
+    echo("</div>");
+    echo("<div class='wnetrze'>");
 	echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org=dzial";
     echo ("<li>".$sql."</li><br><br>");
@@ -76,6 +78,8 @@ $result = mysqli_query($conn, $sql);
 	</td>');
 	        echo ('</tr>');
   	}echo ('</table>');
+    echo("</div>");
+echo('</div>');
 ?>
 </body>
 </html>

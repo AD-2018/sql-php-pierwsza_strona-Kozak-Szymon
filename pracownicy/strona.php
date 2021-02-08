@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="/style.css">
 <title>Szymon Kozak</title>
 </head>
-
 <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
         <br>

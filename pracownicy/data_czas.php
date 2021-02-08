@@ -5,9 +5,10 @@
 <title>Szymon Kozak</title>
 </head>
 <body>
+<div class= "imie">   
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
-    
+</div>
    <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
         <br>
@@ -29,7 +30,8 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-    echo("<h3> PIERWOWZÓR </h3>");
+echo("<div class='tabelki'>");   
+echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy";
     echo ("<li>".$sql."</li><br><br>");
 $result = mysqli_query($conn, $sql);
@@ -313,7 +315,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["dzien"].'</td><td>'.$row["liczba"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-    
+    echo('</div>');
     ?>
         </body>
         </html>
