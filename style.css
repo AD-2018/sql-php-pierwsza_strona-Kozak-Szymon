@@ -1,5 +1,6 @@
 body {
   background-color: pink;
+  flex-wrap: wrap;
 }
 .flexbox-containter1{
 display: flex;
@@ -44,6 +45,7 @@ th {
 .tabelki{
   background-color: white;
   margin: 10px;
+
 }
 
 
