@@ -8,6 +8,7 @@
 <div class= "imie">   
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
+    <h3> PRACOWNICY I ORGANIZACJA </h3>
 </div>
   <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
@@ -24,7 +25,6 @@
     </div>
 <?php
 echo("<div class='listy'>");
-    echo("<h3> PRACOWNICY I ORGANIZACJA </h3>");
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
 $password = "Kacpertorudamałpa_12";

@@ -8,6 +8,7 @@
 <div class= "imie">   
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
+    <h3> FUNKCJE AGREGUJĄCE </h3>
 </div>
     <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
@@ -23,7 +24,6 @@
         <a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
     </div>
 <?php
-    echo("<h3> FUNKCJE AGREGUJĄCE </h3>");
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
 $password = "Kacpertorudamałpa_12";

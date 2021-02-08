@@ -8,6 +8,7 @@
 <div class= "imie">   
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
+    <h3> DATA I CZAS </h3>
 </div>
    <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
@@ -23,7 +24,6 @@
         <a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
     </div>
 <?php
-    echo("<h3> DATA I CZAS </h3>");
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
 $password = "Kacpertorudamałpa_12";
@@ -187,7 +187,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["imie"].'</td><td>'.$row["zarobki"].'</td><td>'.$row["data_urodzenia"].'</td><td>'.$row["dzial"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
-    
+        
     echo ("<h3>FORMATOWANIE DAT </h3>");
     
      echo("<h3> ZAD 1 </h3>");
