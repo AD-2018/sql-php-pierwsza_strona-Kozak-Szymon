@@ -5,9 +5,10 @@
 <title>Szymon Kozak</title>
 </head>
 <body>
+<div class= "imie">   
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
     <h1>Szymon Kozak</h1>
-    
+</div>    
     <div class = "nav">
         <a class="panel" href="/index.php">strona główna</a>
         <br>
@@ -68,8 +69,8 @@ echo('<select name="bibl_autor">');
 	echo('</select>');
 
 	echo("<h3>pomoc do dodawania i usuwania</h3>");
-echo("<div class='flexbox-containter3'>");
-        echo("<div>");
+    echo("<div class='tabelki'>");
+        echo("<div class='wnetrze'>");
 $sql = "SELECT * FROM bibl_book";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -82,7 +83,7 @@ $result = mysqli_query($conn, $sql);
         echo("</div>");
     
  
-        echo("<div>");
+        echo("<div class='wnetrze'>");
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -102,7 +103,7 @@ $result = mysqli_query($conn, $sql);
   	}echo ('</table>');
       echo("</div>");
         
-      echo("<div>");
+      echo("<div class='wnetrze'>");
         $sql = "SELECT * FROM bibl_tytul";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
@@ -121,8 +122,7 @@ $result = mysqli_query($conn, $sql);
 	        echo ('</tr>');
   	}echo ('</table>');
       echo("</div>");
-echo("</div>");
-
+      echo("<div class='wnetrze'>");
 echo("<h3> CALOSC </h3>");
 $sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
     echo ("<li>".$sql."</li><br><br>");
@@ -134,3 +134,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('<td>'.$row["ID_TAB"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
                 echo ('</tr>');
         }echo ('</table>');
+        echo("</div>");
+echo(<"/div>");
+?>
+</body>
+</html>
