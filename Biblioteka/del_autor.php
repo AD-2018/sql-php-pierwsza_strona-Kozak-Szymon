@@ -1,5 +1,5 @@
 <?php
-echo("Delete<br>");
+echo("Delete");
 echo $_POST['id_autor'];
 
 $servername = "mysql-szymonkozak.alwaysdata.net";

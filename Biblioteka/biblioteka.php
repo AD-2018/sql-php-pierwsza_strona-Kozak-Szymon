@@ -47,14 +47,14 @@
     <div>
     <h3>USUN TYTUL</h3>
     <form action="/Biblioteka/del_book.php" method="POST">
-	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
+	<p>PODAJ ID:</p>  <input type="number" name="id_pracownicy"></br>
    <input type="submit" value="usun tytul">
 </form>
     </div>
     <div>
     <h3>USUN AUTORA</h3>
     <form action="/Biblioteka/del_autor.php" method="POST">
-	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
+	<p>PODAJ ID:</p>  <input type="number" name="id_pracownicy"></br>
     <input type="submit" value="usun autora">
     </div>
 </div>
@@ -84,20 +84,6 @@ echo('<select name="bibl_autor">');
 	};
 	echo('</select>');
 
-	
-	
-    echo("<h3> CALOSC </h3>");
-$sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
-    echo ("<li>".$sql."</li><br><br>");
-$result = mysqli_query($conn, $sql);
-    echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>wyporzyczenia</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-                echo ('<tr>');
-                echo ('<td>'.$row["ID_TAB"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
-                echo ('</tr>');
-        }echo ('</table>');
-	
 	echo("<h3>pomoc do dodawania i usuwania</h3>");
 echo("<div class='flexbox-containter3'>");
         echo("<div>");
@@ -138,4 +124,15 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');
         echo("</div>");
 echo("</div>");
-        
+
+echo("<h3> CALOSC </h3>");
+$sql = "SELECT * FROM bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
+    echo ("<li>".$sql."</li><br><br>");
+$result = mysqli_query($conn, $sql);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>ID</th><th>Autor</th><th>Ksiazka</th><th>wyporzyczenia</th></tr>");
+        while ($row = mysqli_fetch_assoc($result)) {
+                echo ('<tr>');
+                echo ('<td>'.$row["ID_TAB"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["wypoz"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
