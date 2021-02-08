@@ -31,7 +31,8 @@ th {
 /* tlo tabelki */
 .tabelki{
   background-color: white;
-  margin: 10px;
+  margin: 20px;
+  width: 50%;
 }
 .wnetrze{
   margin: 4px;
