@@ -20,6 +20,8 @@
         	<br>
         	<a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
   </div>
+<div class= "flexbox-containter">
+    <div class="zawartosc">
 <h3>DODAJ PRACOWNIKA</h3>
     <form action="/pracownicy/insert.php" method="POST">
         <p>Imie:</p>
@@ -32,11 +34,15 @@
         <input type="date" name="data_urodzenia"></br>
         <input type="submit" value="dodaj pracownika">
     </form>
+    </div>
+    <div class="zawartosc">
 <h3>usuwanie pracownika</h3>
 <form action="/pracownicy/delete.php" method="POST">
 	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
    <input type="submit" value="usuń pracownika">
 </form>
+    <div>
+</div>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -58,6 +64,8 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');   
     echo("</div>");
+
+    
     echo("<div class='wnetrze'>");
 	echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org=dzial";
