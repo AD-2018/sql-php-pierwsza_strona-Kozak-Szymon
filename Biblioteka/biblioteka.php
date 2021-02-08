@@ -51,7 +51,7 @@ $password = "Kacpertorudamałpa_12";
 $dbname = "szymonkozak_pracownicy";
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
-	echo("<div class='listy-biblioteka'>");
+	echo("<div class='imie'>");
 	echo('<h2>Listy:<h2>');
 	echo('<h2>lista NR 1<h2>');
 	$sql ="SELECT autor,tytul from bibl_autor,bibl_tytul, bibl_book where bibl_autor.id_autor=bibl_book.id_autor and bibl_tytul.id_tytul=bibl_book.id_tytul";
@@ -68,8 +68,7 @@ echo('<select name="bibl_autor">');
 	};
 	echo('</select>');
     echo("</div>");
-
-	echo("<h3>pomoc do dodawania i usuwania</h3>");
+    
     echo("<div class='tabelki'>");
         echo("<div class='wnetrze'>");
 $sql = "SELECT * FROM bibl_book";
