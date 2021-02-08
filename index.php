@@ -5,7 +5,9 @@
 <title>Szymon Kozak</title>
 </head>
 <body>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
+<div class= "imie">    
+<a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
+</div>
     <br>
     <h1>Szymon Kozak</h1>
     <br>
