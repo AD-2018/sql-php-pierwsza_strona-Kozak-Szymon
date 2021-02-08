@@ -41,7 +41,7 @@
 	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
    <input type="submit" value="usuń pracownika">
 </form>
-    <div>
+    </div>
 </div>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
@@ -65,7 +65,7 @@ $result = mysqli_query($conn, $sql);
         }echo ('</table>');   
     echo("</div>");
 
-    
+
     echo("<div class='wnetrze'>");
 	echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy, organizacja WHERE id_org=dzial";
