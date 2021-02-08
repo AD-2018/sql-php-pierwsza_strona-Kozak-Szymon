@@ -51,3 +51,8 @@ th {
   width: 40%;
   background-color: wheat;
 }
+.flexbox-containter{
+  margin: 10px;
+  width: 20%;
+  background-color: violet;
+}
