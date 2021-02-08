@@ -49,5 +49,8 @@ th {
   display: flex;
   flex-wrap: wrap;
 }
+.tabelki div{
+  margin: 4px;
+}
 
 
