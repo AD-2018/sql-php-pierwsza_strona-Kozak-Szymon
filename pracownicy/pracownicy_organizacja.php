@@ -23,6 +23,7 @@
         <a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
     </div>
 <?php
+echo("<div class='listy'>");
     echo("<h3> PRACOWNICY I ORGANIZACJA </h3>");
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
@@ -45,7 +46,7 @@ echo('<select name="pracownicy">');
  	    echo "</option>";
 	};
 echo('</select>');
-echo("<br>");
+echo("</div>");
 echo("<div class='tabelki'>");
     echo("<h3> PIERWOWZÓR </h3>");
 $sql = "SELECT * FROM pracownicy";
