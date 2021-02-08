@@ -103,7 +103,7 @@ $result = mysqli_query($conn, $sql);
 $sql = "SELECT * FROM bibl_autor";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>Autor</th></tr>");
+    echo ("<tr><th>ID</th><th>Autor</th><th>usun</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
                 echo ('<tr>');
                 echo ('<td>'.$row["id_autor"].'</td><td>'.$row["autor"].'</td>'.
