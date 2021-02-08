@@ -51,8 +51,9 @@ th {
   margin: 4px;
 }
 .imie {
-  background-color: turquoise;
+  background-color: rgba(85, 110, 255, 0.952);
   width: 100%;
+  margin: 10px;
 }
 
 
