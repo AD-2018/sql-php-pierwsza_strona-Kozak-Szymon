@@ -132,7 +132,7 @@ $result = mysqli_query($conn, $sql);
                 echo ('</tr>');
         }echo ('</table>');
         echo("</div>");
-echo(<"/div>");
+echo("</div>");
 ?>
 </body>
 </html>
