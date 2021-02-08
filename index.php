@@ -7,10 +7,11 @@
 <body>
 <div class= "imie">    
 <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
-</div>
+
     <br>
     <h1>Szymon Kozak</h1>
     <br>
+</div>
     <div class = "nav">
         <a class="panel" href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
