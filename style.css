@@ -15,6 +15,7 @@ display: flex;
   display:flex;
 }
 
+/* dane odnosnie tabeli */
 table {
   border-collapse: collapse;
 }
@@ -33,3 +34,5 @@ th {
   background-color: black;
   color: white;
 }
+/* menu glowne */
+

@@ -9,19 +9,19 @@
     <h1>Szymon Kozak</h1>
     
     <div class = "nav">
-        <a href="/index.php">strona główna</a>
+        <a class="panel" href="/index.php">strona główna</a>
         <br>
-        <a href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
+        <a class="panel" href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
-        <a href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
+        <a class="panel" href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
         <br>
-        <a href="/pracownicy/data_czas.php">Data i Czas</a>
+        <a class="panel" href="/pracownicy/data_czas.php">Data i Czas</a>
          <br> 
-        <a href="/pracownicy/Formularz.html">Formularze</a>
+        <a class="panel" href="/pracownicy/Formularz.html">Formularze</a>
         <br>
-        <a href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
+        <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
         <br>
-        <a href="/Biblioteka/biblioteka.php">biblioteka</a>
+        <a class="panel" href="/Biblioteka/biblioteka.php">biblioteka</a>
 </div>
 <h1>Biblioteka</h1>
 <div class="flexbox-containter1">
@@ -57,6 +57,7 @@
 	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
     <input type="submit" value="usun autora">
     </div>
+</div>
 
 
 <?php   
