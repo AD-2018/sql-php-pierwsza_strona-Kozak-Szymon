@@ -1,5 +1,5 @@
 body {
-  background-color: pink;
+  background-color: lightskyblue;
   flex-wrap: wrap;
   display:flex;
 }
@@ -24,13 +24,13 @@ th {
 }
 /* menu glowne */
 .nav{
-  background-color:magenta;
+  background-color: lightblue;
   margin: 10px;
   width: 10%;
 }
 /* tlo tabelki */
 .tabelki{
-  background-color: white;
+  background-color: lightgray;
   margin: 20px;
   width: 50%;
 }
@@ -45,17 +45,17 @@ th {
 .listy{
   margin: 10px;
   width: 30%;
-  background-color: wheat;
+  background-color: lightseagreen;
 }
 .listy-Biblioteka{
   margin: 10px;
   width: 50%;
-  background-color: wheat;
+  background-color: lightseagreen;
 }
 .flexbox-containter{
   margin: 10px;
   width: 20%;
-  background-color: violet;
+  background-color: lightsteelblue;
 }
 .wnetrze{
   margin: 4px
