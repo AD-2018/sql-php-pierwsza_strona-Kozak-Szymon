@@ -46,7 +46,8 @@ th {
 .tabelki{
   background-color: white;
   margin: 10px;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
