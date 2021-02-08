@@ -28,7 +28,7 @@
     <div>
         <h3>DODAJ TYTUL</h3>
         <form action="/Biblioteka/new_tytul.php" method="POST">
-    	<p>Tytul:</p>
+    	<p>TYTUL:</p>
         <input type="text" name="tytul"></br>
         <input type="submit" value="dodaj tytul">
         </form>
