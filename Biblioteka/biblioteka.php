@@ -43,6 +43,22 @@
     </div>
 </div>
 
+<div class="flexbox-containter2">
+    <div>
+    <h3>USUN TYTUL</h3>
+    <form action="/Biblioteka/del_book.php" method="POST">
+	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
+   <input type="submit" value="usun tytul">
+</form>
+    </div>
+    <div>
+    <h3>USUN AUTORA</h3>
+    <form action="/Biblioteka/del_autor.php" method="POST">
+	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
+    <input type="submit" value="usun autora">
+    </div>
+
+
 <?php   
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
