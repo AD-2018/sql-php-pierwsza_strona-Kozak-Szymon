@@ -17,8 +17,6 @@
         	<a class="panel" href="/pracownicy/data_czas.php">Data i Czas</a>
          	<br> 
         	<a class="panel" href="/pracownicy/Formularz.html">Formularze</a>
-        	<br>
-        	<a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
   </div>
 <div class= "flexbox-containter">
     <div class="zawartosc">
