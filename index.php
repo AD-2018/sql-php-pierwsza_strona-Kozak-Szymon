@@ -16,8 +16,6 @@
         <br>
         <a class="panel" href="/pracownicy/data_czas.php">Data i Czas</a>
          <br> 
-        <a class="panel" href="/pracownicy/Formularz.html">Formularze</a>
-        <br>
         <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
         <br>
         <a class="panel" href="/Biblioteka/biblioteka.php">Biblioteka</a>
