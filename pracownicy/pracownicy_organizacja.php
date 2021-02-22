@@ -20,8 +20,6 @@
         <a class="panel" href="/pracownicy/Formularz.html">Formularze</a>
         <br>
         <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
-        <br>
-        <a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
     </div>
 <?php
 echo("<div class='listy'>");

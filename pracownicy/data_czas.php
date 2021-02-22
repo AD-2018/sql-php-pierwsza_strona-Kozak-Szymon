@@ -16,12 +16,8 @@
         <a class="panel" href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
         <br>
         <a class="panel" href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
-        <br> 
-        <a class="panel" href="/pracownicy/Formularz.html">Formularze</a>
         <br>
         <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
-        <br>
-        <a class="panel" href="/pracownicy/delete.php">Usuwanie z bazy</a>
     </div>
 <?php
 $servername = "mysql-szymonkozak.alwaysdata.net";
