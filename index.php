@@ -21,6 +21,11 @@
         <a class="panel" href="/Biblioteka/biblioteka.php">Biblioteka</a>
     </div>
 <?php   
+
+$hostname = $_SERVER['HTTP_HOST'];
+echo("<h1>How to use Enviromental Variables (phpdontenv for php2)</h1>");
+echo("<li> hostname : ".$hostname);
+
 $servername = "mysql-szymonkozak.alwaysdata.net";
 $username = "217196_jan";
 $password = "Kacpertorudamałpa_12";
