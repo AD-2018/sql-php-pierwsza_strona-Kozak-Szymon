@@ -22,7 +22,7 @@
     </div>
 <?php   
 
-if ($hostname == 'localhost:') {
+if ($hostname == 'localhost') {
     require_once ("config.php");
 }
 echo("<li> hostname : ".$hostname);
