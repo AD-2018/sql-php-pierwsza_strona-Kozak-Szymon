@@ -7,6 +7,10 @@
   <title>Dane do bazy </title>
 </head>
 <body>	
+<div class= "imie">    
+<a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Kozak-Szymon">github</a>
+<h1>Szymon Kozak</h1>
+</div>
 <div class = "nav">
         	<a class="panel" href="/index.php">strona główna</a>
         	<br>
