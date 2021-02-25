@@ -20,10 +20,7 @@
         <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
     </div>
 <?php
-$servername = "mysql-szymonkozak.alwaysdata.net";
-$username = "217196_jan";
-$password = "Kacpertorudamałpa_12";
-$dbname = "szymonkozak_pracownicy";
+require_once("../connect.php");
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
 echo("<div class='tabelki'>");  
