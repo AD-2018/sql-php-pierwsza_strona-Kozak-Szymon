@@ -22,6 +22,12 @@
     </div>
 <?php   
 
+if ($hostname == 'localhost:') {
+    require_once ("config.php");
+}
+echo("<li> hostname : ".$hostname);
+echo("<li> SERVER passsword: ".$_SERVER['password']);
+
 require_once("connect.php");
 
 $conn = new mysqli ($servername, $username, $password, $dbname);
