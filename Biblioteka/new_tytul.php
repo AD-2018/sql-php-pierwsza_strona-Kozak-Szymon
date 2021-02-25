@@ -2,10 +2,7 @@
 echo("jestes w new_tytul.php <br>");
 echo "<li>". $_POST['tytul'];
 
-$servername = "mysql-szymonkozak.alwaysdata.net";
-$username = "217196_jan";
-$password = "Kacpertorudamałpa_12";
-$dbname = "szymonkozak_pracownicy";
+require_once("../connect.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
