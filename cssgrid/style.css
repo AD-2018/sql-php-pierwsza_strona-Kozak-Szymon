@@ -1,39 +1,46 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 1;
 }
 .container {
-    background-color: chartreuse;
+    background-color: black;
     paddomg: 5px;
-    height: 100vh;
+    height: 120vh;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    "a a e"
-    "b c e"
-    "d d e";
+    "a b d"
+    "a c d"
+    "a e d";
 }
 header {
-    background-color: coral;
+    background-color:red;
     grid-area: a;
-    height: 15vh;
+    height: 120vh;
+    
+    
 }
 nav {
-    background-color: crimson;
+    background-color: lightgreen;
     grid-area: b;
+    height: 40vh;
 }
 main {
-background-color: lightblue;
+background-color: aqua;
 grid-area: c;
-height: 75vh;
+height: 40vh;
+
 }
 aside {
     grid-area: e;
-    background-color: palevioletred;
+    background-color: green;
+    height: 40vh;
+    
     
 }
 footer {
-background-color: powderblue;
+background-color: yellow;
 grid-area: d;
-height: 10vh;
+height: 120vh;
+
 }
