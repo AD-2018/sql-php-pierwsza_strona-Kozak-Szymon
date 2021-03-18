@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: chartreuse;
+    paddomg: 5px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "a a e"
+    "b c e"
+    "d d e";
+}
+header {
+    background-color: coral;
+    grid-area: a;
+    height: 15vh;
+}
+nav {
+    background-color: crimson;
+    grid-area: b;
+}
+main {
+background-color: lightblue;
+grid-area: c;
+height: 75vh;
+}
+aside {
+    grid-area: e;
+    background-color: palevioletred;
+    
+}
+footer {
+background-color: powderblue;
+grid-area: d;
+height: 10vh;
+}
