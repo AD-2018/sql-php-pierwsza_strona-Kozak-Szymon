@@ -19,6 +19,8 @@
         <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
         <br>
         <a class="panel" href="/Biblioteka/biblioteka.php">Biblioteka</a>
+         <br>
+        <a class="panel" href="/cssgrid/index.html">CSSGRID</a>
     </div>
 <?php   
 
