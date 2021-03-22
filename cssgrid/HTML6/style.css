@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 1;
+}
+.container {
+    background-color: white;
+    padding: 5px;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b d"
+    "a c d"
+    "a e d";
+}
+header {
+    background-color:red;
+    grid-area: a;
+    height: 120vh;
+    
+    
+}
+nav {
+    background-color: lightgreen;
+    grid-area: b;
+    height: 40vh;
+}
+main {
+background-color: aqua;
+grid-area: c;
+height: 40vh;
+
+}
+aside {
+    grid-area: e;
+    background-color: green;
+    height: 40vh;
+    
+    
+}
+footer {
+background-color: yellow;
+grid-area: d;
+height: 120vh;
+}

@@ -3,8 +3,8 @@
     padding: 1;
 }
 .container {
-    background-color: black;
-    paddomg: 5px;
+    background-color: white;
+    padding: 5px;
     height: 120vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
