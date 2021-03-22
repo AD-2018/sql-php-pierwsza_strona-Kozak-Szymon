@@ -23,18 +23,18 @@ header {
 nav {
     background-color: lightgreen;
     grid-area: b;
-    height: 30vh;
+    height: 33vh;
 }
 main {
 background-color: aqua;
 grid-area: c;
-height: 30vh;
+height: 33vh;
 
 }
 aside {
     grid-area: e;
     background-color: green;
-    height: 30vh;
+    height: 33vh;
     
     
 }
