@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 1;
+}
+.container {
+    background-color: white;
+    padding: 5px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c"
+    "a d e"
+    "a f g";
+}
+header {
+    background-color:red;
+    grid-area: a;
+    height: 100vh;
+}
+
+nav {
+    background-color: lightgreen;
+    grid-area: b;
+    height: 33vh;
+}
+
+main {
+background-color: green;
+grid-area: c;
+height: 33vh;
+}
+
+aside {
+grid-area: d;
+background-color: aqua;
+height: 33vh;    
+}
+
+footer {
+background-color: brown;
+grid-area: e;
+height: 33vh;
+}
+
+.zielony_2 {
+color: yellow;
+grid-area: f;
+height: 33h;
+}
+
+.pomarancz {
+color: yellow;
+grid-area: g;
+height: 33vh;
+}
