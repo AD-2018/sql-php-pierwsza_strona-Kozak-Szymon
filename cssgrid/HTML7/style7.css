@@ -44,13 +44,13 @@ height: 33vh;
 }
 
 .zielony_2 {
-color: yellow;
+background-color: yellow;
 grid-area: f;
 height: 33h;
 }
 
 .pomarancz {
-color: yellow;
+background-color: yellow;
 grid-area: g;
 height: 33vh;
 }
