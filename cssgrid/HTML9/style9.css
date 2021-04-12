@@ -9,38 +9,38 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    "a b d"
-    "a c d"
-    "a e d";
+    "a a a"
+    "b c d"
+    "e e e";
 }
 header {
-    background-color:red;
+    background-color:lightgreen;
     grid-area: a;
-    height: 100vh;
+    height:auto;
     
     
 }
 nav {
-    background-color: lightgreen;
+    background-color: red;
     grid-area: b;
-    height: 33vh;
+    height:auto;
 }
 main {
-background-color: aqua;
+background-color: deepskyblue;
 grid-area: c;
-height: 33vh;
+height:auto;
 
 }
 aside {
-    grid-area: e;
-    background-color: green;
-    height: 33vh;
+    grid-area: d;
+    background-color: deepskyblue;
+    height:auto;
     
     
 }
 footer {
 background-color: yellow;
-grid-area: d;
-height: 100vh;
+grid-area: e;
+height:auto;
 
 }

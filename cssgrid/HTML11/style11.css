@@ -9,9 +9,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-    "a b d"
-    "a c d"
-    "a e d";
+    "a a b"
+    "a a c"
+    "a a d";
 }
 header {
     background-color:red;
@@ -21,26 +21,18 @@ header {
     
 }
 nav {
-    background-color: lightgreen;
+    background-color: green;
     grid-area: b;
     height: 33vh;
 }
 main {
-background-color: aqua;
+background-color:deepskyblue;
 grid-area: c;
 height: 33vh;
 
 }
 aside {
-    grid-area: e;
+    grid-area: d;
     background-color: green;
     height: 33vh;
-    
-    
-}
-footer {
-background-color: yellow;
-grid-area: d;
-height: 100vh;
-
 }
