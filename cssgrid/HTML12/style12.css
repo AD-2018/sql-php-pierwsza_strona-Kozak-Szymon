@@ -23,22 +23,22 @@
       height: auto;
   }
   main {
-      background-color: lightskyblue;
+      background-color: deepskyblue;
       grid-area: c;
       height: auto;
   }
   aside {
-      background-color:pink;
+      background-color:blue;
       grid-area: e;
       height: auto;
   }
   footer {
-      background-color: yellow;
+      background-color:yellow;
       grid-area: d;
       height: auto;
   }
   .a {
-    background-color: lightskyblue;
+    background-color: deepskyblue;
     grid-area: f;
     height: auto;
   }
