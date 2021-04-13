@@ -10,15 +10,27 @@
                <?php
                require_once("../connect.php");
 
+               echo("<br>PRODUCENCI<br>");
                $sql = "SELECT * FROM Producent";
+               echo($sql);
+               
                $result = mysqli_query($conn, $sql);
-               echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>id_producent</th><th>producent</th></tr>");
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo ('<tr>');
-            echo ('<td>'.$row["id_producent"].'</td><td>'.$row["producent"].'</td>');
-            echo ('</tr>');
-  	}echo ('</table>');
+               if ( $result) {
+                       echo "<li>ok";
+                   } else {
+                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                   }
+               
+               echo('<table border="1">');
+                   echo('<th>id_producent</th><th>producent</th>');
+               
+                   while($row=mysqli_fetch_assoc($result)){
+                       echo('<tr>');
+                       echo('<td>'.$row['id_producent'].'</td><td>'.$row['producent'].'</td>');
+                       echo('</tr>');
+                   }
+               
+               echo('</table>');
                ?>
             </div>
             <div class="ww">
