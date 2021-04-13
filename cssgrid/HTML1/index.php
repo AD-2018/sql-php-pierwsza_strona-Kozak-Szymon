@@ -34,7 +34,7 @@
             </div>
             <div class="qq">
             <?php
-require_once ("../lib.php");
+            require_once("../../connect.php");
 
       echo("<br>PRAWNICY I SPRAWY<br>");
 $sql = "SELECT id_sad, Imie, sprawa FROM prawnicy, sprawy, sad WHERE prawnicy.ID = sad.id_prawnik AND sprawy.ID = sad.id_sprawa";
