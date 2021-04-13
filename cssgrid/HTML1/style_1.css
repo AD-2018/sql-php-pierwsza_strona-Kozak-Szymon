@@ -16,9 +16,7 @@
  .hh{
     background-color:red;
     grid-area: a;
-    height: 100vh;
-    
-    
+    height: 100vh; 
 }
 .ww{
     background-color: lightgreen;
