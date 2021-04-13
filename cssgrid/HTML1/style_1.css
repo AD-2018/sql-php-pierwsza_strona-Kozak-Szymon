@@ -13,32 +13,32 @@
     "a c d"
     "a e d";
 }
-header {
+ .hh{
     background-color:red;
     grid-area: a;
     height: 100vh;
     
     
 }
-nav {
+.ww{
     background-color: lightgreen;
     grid-area: b;
     height: 33vh;
 }
-main {
+.qq{
 background-color: aqua;
 grid-area: c;
 height: 33vh;
 
 }
-aside {
+ .ee{
     grid-area: e;
     background-color: green;
     height: 33vh;
     
     
 }
-footer {
+.yy{
 background-color: yellow;
 grid-area: d;
 height: 100vh;
