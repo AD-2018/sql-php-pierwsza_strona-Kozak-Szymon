@@ -15,7 +15,7 @@
                $sql = "SELECT * FROM Producent";
 $result = mysqli_query($conn, $sql);
     echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>ID</th><th>id_producent</th><th>producent</th></tr>");
+    echo ("<tr><th>id_producent</th><th>producent</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
             echo ('<tr>');
             echo ('<td>'.$row["id_producent"].'</td><td>'.$row["producent"].'</td>');
