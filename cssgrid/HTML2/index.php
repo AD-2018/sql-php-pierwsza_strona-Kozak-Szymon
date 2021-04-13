@@ -56,6 +56,9 @@
                 ?>
             </div>
             <div class="ww">
+            3
+            </div>
+            <div class="qq">
             <?php
             require_once("../../connect.php");
 
@@ -81,9 +84,6 @@ echo('<table border="1">');
 echo('</table>');
 
 ?>
-            </div>
-            <div class="qq">
-                3
             </div>
             <div class="zolte">
                 5
