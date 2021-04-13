@@ -60,7 +60,7 @@
             require_once("../../connect.php");
 
       echo("<br>SKLEP<br>");
-$sql = "SELECT id_produkt, producent, produkt FROM Sklep, Producent, Produkt WHERE Producent.id_producent = Sklep.id_producent AND Produkt.id_produkt = Sklep.id_produkt";
+$sql = "SELECT id, producent, produkt FROM Sklep, Producent, Produkt WHERE Producent.id_producent = Sklep.id_producent AND Produkt.id_produkt = Sklep.id_produkt";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
