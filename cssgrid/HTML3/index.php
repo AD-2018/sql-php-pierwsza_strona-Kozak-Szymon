@@ -34,7 +34,27 @@ echo('</table>');
 ?>
             </div>
             <div class="nav">
-                1
+            <?php
+               require_once("../../connect.php");
+
+               echo("<br>OSOBY<br>");
+            $sql = "SELECT * FROM osoby";
+    echo($sql);
+
+        $result = mysqli_query($conn, $sql);
+        if ( $result) {
+        } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+        echo('<table border="1">');
+        echo('<th>id</th><th>imie</th>');
+        while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['imie'].'</td>');
+        echo('</tr>');
+        }
+        echo('</table>');
+                ?>
             </div>
             <div class="main">
                 2
@@ -43,7 +63,27 @@ echo('</table>');
                 4
             </div>
             <div class="footer">
-                3
+            <?php
+               require_once("../../connect.php");
+
+               echo("<br>ROLA<br>");
+            $sql = "SELECT * FROM rola";
+    echo($sql);
+
+        $result = mysqli_query($conn, $sql);
+        if ( $result) {
+        } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+        echo('<table border="1">');
+        echo('<th>ID</th><th>rola</th>');
+        while($row=mysqli_fetch_assoc($result)){
+        echo('<tr>');
+        echo('<td>'.$row['id'].'</td><td>'.$row['rola'].'</td>');
+        echo('</tr>');
+        }
+        echo('</table>');
+                ?>
             </div>
         </div>
     </body>
