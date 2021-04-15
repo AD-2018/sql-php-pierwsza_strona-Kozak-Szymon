@@ -10,8 +10,8 @@
             <?php
             require_once("../../connect.php");
 
-      echo("<br>SYSTEM INFORMATYCZNY<br>");
-$sql = "SELECT id, pracownik, projekt FROM pracownik_projekt, pracownik, projekt WHERE pracownik.id = pracownik_projekt.id_projekt AND projekt.id = pracownik_projekt.id_projekt";
+      echo("<br>FIRMA<br>");
+$sql = "SELECT id, pracownik, projekt  FROM pracownik_projekt, pracownik, projekt WHERE pracownik.id = pracownik_projekt.id_pracownik AND projekt.id = pracownik_projekt.id_projekt";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -21,7 +21,7 @@ if ( $result) {
     }
 
 echo('<table border="1">');
-    echo('<th>ID</th><th>Pracownik</th><th>Projekt</th>');
+    echo('<th>id</th><th>pracownik</th><th>projekt</th>');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
