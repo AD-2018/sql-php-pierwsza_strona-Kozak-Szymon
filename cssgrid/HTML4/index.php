@@ -11,7 +11,7 @@
             require_once("../../connect.php");
 
       echo("<br>FIRMA<br>");
-$sql = "SELECT id, pracownik, projekt  FROM pracownik_projekt, pracownik, projekt WHERE pracownik.id = pracownik_projekt.id_pracownik AND projekt.id = pracownik_projekt.id_projekt";
+$sql = "SELECT id_firma, pracownik, projekt FROM pracownik_projekt, pracownik, projekt WHERE pracownik.id = pracownik_projekt.id_pracownik AND projekt.id = pracownik_projekt.id_projekt";
 echo($sql);
 
 $result = mysqli_query($conn, $sql);
@@ -25,7 +25,7 @@ echo('<table border="1">');
 
     while($row=mysqli_fetch_assoc($result)){
         echo('<tr>');
-        echo('<td>'.$row['id'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'</td>');
+        echo('<td>'.$row['id_firma'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'</td>');
         echo('</tr>');
     }
 
