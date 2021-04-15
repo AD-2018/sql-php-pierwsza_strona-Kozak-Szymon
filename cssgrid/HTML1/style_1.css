@@ -27,18 +27,14 @@
 background-color: aqua;
 grid-area: c;
 height: 33vh;
-
 }
  .ee{
     grid-area: e;
     background-color: green;
     height: 33vh;
-    
-    
 }
 .yy{
 background-color: yellow;
 grid-area: d;
 height: 100vh;
-
 }
