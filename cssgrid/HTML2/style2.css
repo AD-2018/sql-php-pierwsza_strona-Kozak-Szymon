@@ -16,9 +16,7 @@
 .hh{
 background-color:red;
 grid-area: a;
-height: 100vh;
-    
-    
+height: 100vh; 
 }
 .yy{
     background-color: lightgreen;
@@ -30,7 +28,6 @@ height: 100vh;
 background-color: aqua;
 grid-area: c;
 height: 40vh;
-
 }
 .qq {
     grid-area: d;
