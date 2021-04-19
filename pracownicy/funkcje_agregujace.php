@@ -11,7 +11,7 @@
     <h3> FUNKCJE AGREGUJĄCE </h3>
 </div>
     <div class = "nav">
-    <?php include_once("menu.php"); ?>
+    <?php include_once("../menu.php"); ?>
     </div>
 <?php
 require_once("../connect.php");

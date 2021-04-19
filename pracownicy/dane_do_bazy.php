@@ -12,7 +12,7 @@
 <h1>Szymon Kozak</h1>
 </div>
 <div class = "nav">
-<?php include_once("menu.php"); ?>
+<?php include_once("../menu.php"); ?>
   </div>
 <div class= "flexbox-containter">
     <div class="zawartosc">

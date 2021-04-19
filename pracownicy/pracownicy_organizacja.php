@@ -11,7 +11,7 @@
     <h3> PRACOWNICY I ORGANIZACJA </h3>
 </div>
   <div class = "nav">
-  <?php include_once("menu.php"); ?>
+  <?php include_once("../menu.php"); ?>
     </div>
 <?php
 echo("<div class='listy'>");
