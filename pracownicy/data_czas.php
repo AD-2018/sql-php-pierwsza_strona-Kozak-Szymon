@@ -11,13 +11,7 @@
     <h3> DATA I CZAS </h3>
 </div>
    <div class = "nav">
-        <a class="panel" href="/index.php">strona główna</a>
-        <br>
-        <a class="panel" href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
-        <br>
-        <a class="panel" href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
-        <br>
-        <a class="panel" href="/pracownicy/dane_do_bazy.php">Dane do bazy</a>
+   <?php include_once("menu.php"); ?>
     </div>
 <?php
 require_once("../connect.php");
