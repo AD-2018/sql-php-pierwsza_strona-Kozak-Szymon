@@ -10,7 +10,7 @@
 <h1>Szymon Kozak</h1>
 </div>
     <div class = "nav">
-    <?php include("menu.php"); ?>
+    <?php include_once("menu.php"); ?>
     </div>
 <?php   
 
