@@ -11,12 +11,12 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM Producent WHERE id_producent=".$_POST['id_producent'];
+$sql = "DELETE FROM pracownik_projekt WHERE id_firma=".$_POST['id_firma'];
 
 echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-    header ('Location:https://kozak-szymon.herokuapp.com/cssgrid/HTML2/index.php');
+    header ('Location:https://kozak-szymon.herokuapp.com/cssgrid/HTML4/index.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

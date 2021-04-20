@@ -24,7 +24,16 @@
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id_firma'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'</td>');
+                    echo('<td>'.$row['id_firma'].'</td><td>'.$row['pracownik'].'</td><td>'.$row['projekt'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelFirma.php" method="POST">
+                            <input type="text" name="id_firma" value="'.$row["id_firma"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>');      
+                
                     echo('</tr>');
                     }
 
@@ -51,7 +60,16 @@
                     echo('<th>id</th><th>Projekt</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id'].'</td><td>'.$row['projekt'].'</td>');
+                    echo('<td>'.$row['id'].'</td><td>'.$row['projekt'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelProjekt.php" method="POST">
+                            <input type="text" name="id" value="'.$row["id"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+                    </td>');     
+                
                     echo('</tr>');
                     }
                     echo('</table>');
@@ -81,6 +99,10 @@
                     }
                     echo('</table>');
                 ?>
+                <form action="DelPracownik.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id"></br>
+                <input type="submit" value="usun procownika">
+                </form> 
             </footer>
         </div>
     </body>
