@@ -44,7 +44,6 @@
                 <?php
                     require_once("../../connect.php");
 
-                    echo("<br>PRODUCENT<br>");
                     $sql = "SELECT * FROM Producent";
     
                     $result = mysqli_query($conn, $sql);
