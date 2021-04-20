@@ -24,7 +24,16 @@
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id_sad'].'</td><td>'.$row['Imie'].'</td><td>'.$row['sprawa'].'</td>');
+                    echo('<td>'.$row['id_sad'].'</td><td>'.$row['Imie'].'</td><td>'.$row['sprawa'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelSad.php" method="POST">
+                            <input type="text" name="id_sad" value="'.$row["id_sad"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>');    
+                
                     echo('</tr>');
                     }
 
