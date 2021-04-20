@@ -16,7 +16,7 @@ $sql = "DELETE FROM sprawy WHERE ID=".$_POST['ID'];
 echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-    header ('Location:https://kozak-szymon.herokuapp.com/Biblioteka/biblioteka.php');
+    header ('Location:https://kozak-szymon.herokuapp.com/cssgrid/HTML1/index.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
