@@ -39,7 +39,6 @@
                 <?php
                     require_once("../../connect.php");
 
-                    echo("<br>SPRAWY<br>");
                     $sql = "SELECT * FROM sprawy";
 
                     $result = mysqli_query($conn, $sql);
