@@ -89,6 +89,13 @@
                     }
                     echo('</table>');
                 ?>
+                
+                <h3>Usuwanie prawnika</h3>
+                <form action="DelPrawnik.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="ID"></br>
+                <input type="submit" value="usun prawnika">
+                </form>
+
             </div>
         </div>
     </body>
