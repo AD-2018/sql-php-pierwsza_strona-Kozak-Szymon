@@ -72,7 +72,6 @@
                 <?php
                     require_once("../../connect.php");
 
-                    echo("<br>SPRAWY<br>");
                     $sql = "SELECT * FROM prawnicy";
 
                     $result = mysqli_query($conn, $sql);
