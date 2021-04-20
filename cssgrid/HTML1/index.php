@@ -59,7 +59,7 @@
                             <input type="text" name="ID" value="'.$row["ID"].'" hidden>
                             <input type="submit" value="Usun">
                         </form>
-              </td>'););
+              </td>');
                     echo('</tr>');
                     }
                     echo('</table>');
