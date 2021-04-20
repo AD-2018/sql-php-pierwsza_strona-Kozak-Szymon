@@ -11,12 +11,12 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM sad WHERE ia_sad=".$_POST['id_sad'];
+$sql = "DELETE FROM osoby WHERE id_inf=".$_POST['id'];
 
 echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-    header ('Location:https://kozak-szymon.herokuapp.com/cssgrid/HTML1/index.php');
+    header ('Location:https://kozak-szymon.herokuapp.com/cssgrid/HTML3/index.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
