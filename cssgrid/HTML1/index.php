@@ -63,7 +63,6 @@
                     echo('</tr>');
                     }
                     echo('</table>');
-                    echo("cos")
                 ?>
                 
             </div>
