@@ -62,7 +62,6 @@
                     echo('</table>');
                 ?>
 
-                <h3>Usuwanie producenta</h3>
                 <form action="DelProducent.php" method="POST">
 	            <label>Podaj id:</label>  <input type="number" name="id_producent"></br>
                 <input type="submit" value="usun producenta">
