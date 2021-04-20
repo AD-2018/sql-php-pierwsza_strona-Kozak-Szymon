@@ -51,7 +51,15 @@
                     echo('<th>ID</th><th>Sprawa</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>');
+                    echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelSprawa.php" method="POST">
+                            <input type="text" name="ID" value="'.$row["ID"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>'););
                     echo('</tr>');
                     }
                     echo('</table>');
