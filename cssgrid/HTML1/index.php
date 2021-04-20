@@ -29,7 +29,7 @@
                     '<td>
 	
                     <form action="DelSad.php" method="POST">
-                            <input type="text" name="id" value="'.$row["id"].'" hidden>
+                            <input type="text" name="id_sad" value="'.$row["id_sad"].'" hidden>
                             <input type="submit" value="Usun">
                         </form>
               </td>');    
