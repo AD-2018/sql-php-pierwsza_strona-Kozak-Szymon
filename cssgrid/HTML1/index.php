@@ -73,7 +73,7 @@
                     require_once("../../connect.php");
 
                     echo("<br>SPRAWY<br>");
-                    $sql = "SELECT * FROM sprawy";
+                    $sql = "SELECT * FROM prawnicy";
 
                     $result = mysqli_query($conn, $sql);
                     if ( $result) {
@@ -81,10 +81,10 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                     }
                     echo('<table border="1">');
-                    echo('<th>ID</th><th>Sprawa</th>');
+                    echo('<th>ID</th><th>Imie</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>');
+                    echo('<td>'.$row['ID'].'</td><td>'.$row['Imie'].'</td>');
                     echo('</tr>');
                     }
                     echo('</table>');
