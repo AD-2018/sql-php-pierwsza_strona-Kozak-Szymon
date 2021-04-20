@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM osoby WHERE id_inf=".$_POST['id'];
+$sql = "DELETE FROM osoby WHERE id=".$_POST['id'];
 
 echo $sql;
 
