@@ -22,7 +22,16 @@
                     echo('<th>id_produkt</th><th>produkt</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id_produkt'].'</td><td>'.$row['produkt'].'</td>');
+                    echo('<td>'.$row['id_produkt'].'</td><td>'.$row['produkt'].'</td>'.
+                
+                
+                    '<td>
+	
+                    <form action="DelProdukt.php" method="POST">
+                            <input type="text" name="id_produkt" value="'.$row["id_produkt"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>');
                     echo('</tr>');
                     }
                     echo('</table>');
@@ -52,6 +61,13 @@
                     }
                     echo('</table>');
                 ?>
+
+                <h3>Usuwanie producenta</h3>
+                <form action="DelProducent.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id_producent"></br>
+                <input type="submit" value="usun producenta">
+                </form>  
+
             </div>
             <div class="ww">
             3
