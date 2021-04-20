@@ -19,7 +19,7 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                     }
                     echo('<table border="1">');
-                    echo('<th>ID</th><th>osoba</th><th>rola</th>');
+                    echo('<th>ID</th><th>osoba</th><th>rola</th><th>USUN</th>');
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
@@ -84,7 +84,7 @@
                      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                         }
                      echo('<table border="1">');
-                     echo('<th>ID</th><th>rola</th>');
+                     echo('<th>ID</th><th>rola</th><th>USUN</th>');
                      while($row=mysqli_fetch_assoc($result)){
                      echo('<tr>');
                      echo('<td>'.$row['id'].'</td><td>'.$row['rola'].'</td>'.

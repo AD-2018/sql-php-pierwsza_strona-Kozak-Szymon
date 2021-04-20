@@ -19,7 +19,7 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                     }
                     echo('<table border="1">');
-                    echo('<th>id_produkt</th><th>produkt</th>');
+                    echo('<th>id_produkt</th><th>produkt</th><th>USUN</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
                     echo('<td>'.$row['id_produkt'].'</td><td>'.$row['produkt'].'</td>'.
@@ -84,7 +84,7 @@
                     }
 
                     echo('<table border="1">');
-                    echo('<th>ID</th><th>Producent</th><th>Produkt</th>');
+                    echo('<th>ID</th><th>Producent</th><th>Produkt</th><th>USUN</th>');
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');

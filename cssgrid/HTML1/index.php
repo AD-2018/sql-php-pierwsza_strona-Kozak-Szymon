@@ -20,7 +20,7 @@
                     }
 
                     echo('<table border="1">');
-                    echo('<th>ID</th><th>PRAWNIK</th><th>SPRAWA</th>');
+                    echo('<th>ID</th><th>PRAWNIK</th><th>SPRAWA</th><th>USUN</th>');
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
@@ -56,7 +56,7 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                     }
                     echo('<table border="1">');
-                    echo('<th>ID</th><th>Sprawa</th>');
+                    echo('<th>ID</th><th>Sprawa</th><th>USUN</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
                     echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>'.

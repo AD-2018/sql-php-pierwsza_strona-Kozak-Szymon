@@ -20,7 +20,7 @@
                     }
 
                     echo('<table border="1">');
-                    echo('<th>id</th><th>pracownik</th><th>projekt</th>');
+                    echo('<th>id</th><th>pracownik</th><th>projekt</th><th>USUN</th>');
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
@@ -57,7 +57,7 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                     }
                     echo('<table border="1">');
-                    echo('<th>id</th><th>Projekt</th>');
+                    echo('<th>id</th><th>Projekt</th><th>USUN</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
                     echo('<td>'.$row['id'].'</td><td>'.$row['projekt'].'</td>'.
