@@ -88,7 +88,16 @@
 
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id'].'</td><td>'.$row['producent'].'</td><td>'.$row['produkt'].'</td>');
+                    echo('<td>'.$row['id'].'</td><td>'.$row['producent'].'</td><td>'.$row['produkt'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelSklep.php" method="POST">
+                            <input type="text" name="id" value="'.$row["id"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+                    </td>');
+            
                     echo('</tr>');
                     }
 
