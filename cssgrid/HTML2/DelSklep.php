@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM sklep WHERE id=".$_POST['id'];
+$sql = "DELETE FROM Sklep WHERE id=".$_POST['id'];
 
 echo $sql;
 
