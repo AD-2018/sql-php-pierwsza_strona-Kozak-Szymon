@@ -15,18 +15,18 @@ function selectColumn_werEDU($tableName, $myColumns=[]){
     echo $sql;
     $result = $conn->query($sql);
 
-    echo("<table border=1>");
+    echo("<p><table border=1>");
     echo("<tr>");
     for($i=0; $i<count($mycolumns);$i++){
         echo("<th>".$mycolumns[$i]."</th>");
     }
     while($row = $result->fetch_assoc() ){
         echo("<tr>");
-        for($i=0; $i<count($mycolumns); $i++) {
-            echo("<td>".$row[$mycolumns($i)]."</td>");
+        for($i=0; $i<count($mycolumns); $i++){
+            echo( "<td>".$row[$mycolumns($i)]."</td>" );
         }
         echo("</tr>");
     }
-    echo("</table>");
+    echo("</table></p>");
 }
 ?>
