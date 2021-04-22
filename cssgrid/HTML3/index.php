@@ -38,6 +38,12 @@
                     echo('</table>');
 
                     ?>
+
+                <form action="DelSys.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id_inf"></br>
+                <input type="submit" value="usun">
+                </form>
+
                 </div>
                 <div class="nav">
                     <?php
@@ -55,15 +61,26 @@
                      echo('<th>id</th><th>imie</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id'].'</td><td>'.$row['imie'].'</td>');
+                    echo('<td>'.$row['id'].'</td><td>'.$row['imie'].'</td>'.
+
+                    '<td>
+	
+                    <form action="DelOsoba.php" method="POST">
+                            <input type="text" name="id" value="'.$row["id"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+                    </td>');
+
                     echo('</tr>');
                     }
                     echo('</table>');
                     ?>
+
                     <form action="DelOsoba.php" method="POST">
 	            <label>Podaj id:</label>  <input type="number" name="id"></br>
-                <input type="submit" value="usun osobe">
+                <input type="submit" value="usun">
                 </form>
+
                 </div>
                 <div class="main">
                      2
@@ -100,6 +117,12 @@
                      }
                      echo('</table>');
                      ?>
+
+                <form action="DelRola.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id"></br>
+                <input type="submit" value="usun">
+                </form>
+
                 </div>
         </div>
     </body>

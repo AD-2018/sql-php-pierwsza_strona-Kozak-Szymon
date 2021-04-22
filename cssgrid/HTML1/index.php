@@ -40,6 +40,13 @@
                     echo('</table>');
 
                 ?>
+
+                <h3>Prawnicy i sprawy</h3>
+                <form action="DelSad.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id_sad"></br>
+                <input type="submit" value="usun">
+                </form>
+
             </div>
             <div class="ww">
                 1
@@ -72,6 +79,12 @@
                     }
                     echo('</table>');
                 ?>
+
+                <h3>Usuwanie prawnika</h3>
+                <form action="DelSprawa.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="ID"></br>
+                <input type="submit" value="usun">
+                </form>
                 
             </div>
             <div class="ee">
@@ -89,10 +102,19 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                     }
                     echo('<table border="1">');
-                    echo('<th>ID</th><th>Imie</th>');
+                    echo('<th>ID</th><th>Imie</th><th>usun</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['ID'].'</td><td>'.$row['Imie'].'</td>');
+                    echo('<td>'.$row['ID'].'</td><td>'.$row['Imie'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelPrawnik.php" method="POST">
+                            <input type="text" name="ID" value="'.$row["ID"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>');
+                
                     echo('</tr>');
                     }
                     echo('</table>');
@@ -101,7 +123,7 @@
                 <h3>Usuwanie prawnika</h3>
                 <form action="DelPrawnik.php" method="POST">
 	            <label>Podaj id:</label>  <input type="number" name="ID"></br>
-                <input type="submit" value="usun prawnika">
+                <input type="submit" value="usun">
                 </form>
 
             </div>

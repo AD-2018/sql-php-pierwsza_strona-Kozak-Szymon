@@ -36,6 +36,12 @@
                     }
                     echo('</table>');
                 ?>
+
+                <form action="DelProdukt.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id_produkt"></br>
+                <input type="submit" value="usun">
+                </form> 
+
             </div>
             <div class="ee">
                 1
@@ -55,7 +61,16 @@
                     echo('<th>id_producent</th><th>producent</th>');
                     while($row=mysqli_fetch_assoc($result)){
                     echo('<tr>');
-                    echo('<td>'.$row['id_producent'].'</td><td>'.$row['producent'].'</td>');
+                    echo('<td>'.$row['id_producent'].'</td><td>'.$row['producent'].'</td>'.
+                
+                    '<td>
+	
+                    <form action="DelProdukt.php" method="POST">
+                            <input type="text" name="id_producent" value="'.$row["id_producent"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>');
+                
                     echo('</tr>');
                     }
                     echo('</table>');
@@ -63,7 +78,7 @@
 
                 <form action="DelProducent.php" method="POST">
 	            <label>Podaj id:</label>  <input type="number" name="id_producent"></br>
-                <input type="submit" value="usun producenta">
+                <input type="submit" value="usun">
                 </form>  
 
             </div>
@@ -104,6 +119,11 @@
                     echo('</table>');
 
                 ?>
+
+                <form action="DelSklep.php" method="POST">
+	            <label>Podaj id:</label>  <input type="number" name="id"></br>
+                <input type="submit" value="usun">
+                </form> 
             </div>
             <div class="zolte">
                 5

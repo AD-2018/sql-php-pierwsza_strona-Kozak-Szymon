@@ -16,7 +16,7 @@ function selectColumn_werEDU($tableName, $myColumns=[]){
     $result = $conn->query($sql);
 
     echo("<p><table border=1>");
-    echo("<tr>");
+    echo("<tr>"); 
     for($i=0; $i<count($mycolumns);$i++){
         echo("<th>".$mycolumns[$i]."</th>");
     }
