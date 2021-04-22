@@ -9,23 +9,8 @@
             require_once("connect.php");
             require_once("function.php");
 
-
-
-
-
-
-
-
-
-
-
-
             selectColumn_werEDU("pracownik",["imie","zarobki","data_urodzenia","dzial"]);
             select("pracownik",["imie","zarobki","data_urodzenia","dzial"]);
-
-
-
-
 
             ?>
 </body>

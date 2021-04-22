@@ -1,16 +1,16 @@
 <?php 
 function selectColumn_werEDU($tableName, $myColumns=[]){
     print_r($mycolumns);
-    echo ($myColumns[0]);
+    echo ($mycolumns[0]);
     echo ($mycolumns[1]);
 
-    requiere("../../connect.php");
+    requiere("connect.php");
 
-    $kolumny_show=implode(',', $myColumns);
+    $kolumny_show=implode(', ', $mycolumns);
     echo $kolumny_show;
-    $kolumny = implode(',', $myColumns);
+    $kolumny = implode(', ', $mycolumns);
     echo ("<li>wygenerowany SELECT: "."<br>");
-    $sql="SELECT".$kolumny."FROM".$tableName;
+    $sql="SELECT ".$kolumny."FROM".$tableName;
 
     echo $sql;
     $result = $conn->query($sql);
