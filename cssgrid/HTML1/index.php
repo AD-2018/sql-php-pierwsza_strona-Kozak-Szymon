@@ -52,46 +52,8 @@
                 1
             </div>
             <div class="qq">
-                <?php
-                    require_once("../../connect.php");
-
-                    $sql = "SELECT * FROM sprawy";
-
-                    $result = mysqli_query($conn, $sql);
-                    if ( $result) {
-                    } else {
-                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                    }
-                    echo('<table border="1">');
-                    echo('<th>ID</th><th>Sprawa</th><th>USUN</th>');
-                    while($row=mysqli_fetch_assoc($result)){
-                    echo('<tr>');
-                    echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>'.
                 
-                    '<td>
-	
-                    <form action="DelSprawa.php" method="POST">
-                            <input type="text" name="ID" value="'.$row["ID"].'" hidden>
-                            <input type="submit" value="Usun">
-                        </form>
-              </td>');
-                    echo('</tr>');
-                    }
-                    echo('</table>');
-                ?>
-
-                <h3>Usuwanie prawnika</h3>
-                <form action="DelSprawa.php" method="POST">
-	            <label>Podaj id:</label>  <input type="number" name="ID"></br>
-                <input type="submit" value="usun">
-                </form>
-                
-            </div>
-            <div class="ee">
-                4
-            </div>
-            <div class="yy">
-                <?php
+            <?php
                     require_once("../../connect.php");
 
                     $sql = "SELECT * FROM prawnicy";
@@ -123,6 +85,46 @@
                 <h3>Usuwanie prawnika</h3>
                 <form action="DelPrawnik.php" method="POST">
 	            <label>Podaj id:</label>  <input type="number" name="ID"></br>
+                <input type="submit" value="usun">
+                </form>
+
+            </div>
+            <div class="ee">
+                4
+            </div>
+            <div class="yy">
+                
+            <?php
+                    require_once("../../connect.php");
+
+                    $sql = "SELECT * FROM sprawy";
+
+                    $result = mysqli_query($conn, $sql);
+                    if ( $result) {
+                    } else {
+                    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+                    }
+                    echo('<table border="1">');
+                    echo('<th>ID</th><th>Sprawa</th><th>USUN</th>');
+                    while($row=mysqli_fetch_assoc($result)){
+                    echo('<tr>');
+                    echo('<td>'.$row['ID'].'</td><td>'.$row['sprawa'].'</td>'.
+                
+                    '<td>
+    
+                    <form action="DelSprawa.php" method="POST">
+                            <input type="text" name="ID" value="'.$row["ID"].'" hidden>
+                            <input type="submit" value="Usun">
+                        </form>
+              </td>');
+                    echo('</tr>');
+                    }
+                    echo('</table>');
+                ?>
+
+                <h3>Usuwanie prawnika</h3>
+                <form action="DelSprawa.php" method="POST">
+                <label>Podaj id:</label>  <input type="number" name="ID"></br>
                 <input type="submit" value="usun">
                 </form>
 
