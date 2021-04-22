@@ -21,7 +21,7 @@
 
 
             selectColumn_werEDU("pracownik",["imie","zarobki","data_urodzenia","dzial"]);
-            select("pracownik",["imie","zaborki","dara_urodzenia","dzial"]);
+            select("pracownik",["imie","zarobki","data_urodzenia","dzial"]);
 
 
 
