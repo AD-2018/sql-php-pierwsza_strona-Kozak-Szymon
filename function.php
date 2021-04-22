@@ -4,7 +4,7 @@ function selectColumn_werEDU($tableName, $myColumns=[]){
     echo ($mycolumns[0]);
     echo ($mycolumns[1]);
 
-    requiere("connect.php");
+    requiere("../../connect.php");
 
     $kolumny_show=implode(', ', $mycolumns);
     echo $kolumny_show;
