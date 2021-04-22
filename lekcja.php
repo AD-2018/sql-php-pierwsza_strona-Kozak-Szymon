@@ -11,7 +11,6 @@
 
             selectColumn_werEDU("pracownik",["imie","zarobki","data_urodzenia","dzial"]);
             select("pracownicy",["imie","zarobki","data_urodzenia","dzial"]);
-
             ?>
 </body>
 </html>
