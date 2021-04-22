@@ -122,7 +122,7 @@
                 ?>
                 <form action="DelPracownik.php" method="POST">
 	            <label>Podaj id:</label>  <input type="number" name="id"></br>
-                <input type="submit" value="usun procownika">
+                <input type="submit" value="usun">
                 </form> 
             </footer>
         </div>

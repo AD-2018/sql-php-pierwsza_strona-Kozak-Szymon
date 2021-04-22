@@ -65,7 +65,7 @@
                 
                     '<td>
 	
-                    <form action="DelProdukt.php" method="POST">
+                    <form action="DelProducent.php" method="POST">
                             <input type="text" name="id_producent" value="'.$row["id_producent"].'" hidden>
                             <input type="submit" value="Usun">
                         </form>
