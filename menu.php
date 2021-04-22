@@ -1,5 +1,7 @@
 <a class="panel" href="/index.php">strona główna</a>
 <br>
+<a class="panel" href="/lekcja.php">lekcja</a>
+<br>
 <a class="panel" href="/pracownicy/pracownicy_organizacja.php">pracownicy organizacja</a>
 <br>
 <a class="panel" href="/pracownicy/funkcje_agregujace.php">Funkcje Agregujace</a>
